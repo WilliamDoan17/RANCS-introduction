@@ -9,7 +9,7 @@
   - Do the same for C++
 => folder: `packet-server-client`
 
-- Be able to do bit wise operatations in python and C++
+- Be able to do bit wise operations in python and C++
 - to be able to pack and upack packets (&, |, >>, <<)
 - Do things like "from le_to_bytes" (ie convert binary into floats or ints)
   - know little endian vs big endian
