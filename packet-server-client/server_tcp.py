@@ -19,7 +19,7 @@ def handle_client(conn, addr):
             if not data: 
                 conn.sendall(b"package lost")
                 return
-            print(f"Received data packet with content {data.decode()} from address {addr[0]}:{addr[1]}\n")
+            print(f"Received data packet with content {data.decode()} from address {addr[0]}:{addr[1]}")
             conn.sendall(b"received data");
 
 
