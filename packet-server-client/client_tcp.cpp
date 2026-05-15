@@ -54,9 +54,9 @@ void client() {
 
   char server_ip[INET_ADDRSTRLEN];
   inet_ntop(AF_INET, &(server_addr->sin_addr), server_ip, sizeof(server_ip));
+  int server_port = ntohs(server_addr->sin_port);
 
-  cout << "Connected to server at " << server_ip << ":" << server_addr->sin_port
-       << "\n";
+  cout << "Connected to server at " << server_ip << ":" << server_port << "\n";
 
   while (1) {
     cout << "Your message to the server: ";
@@ -66,6 +66,9 @@ void client() {
       cout << "Send failed\n";
       break;
     }
+    char server_msg[1024];
+    recv(client_socket, server_msg, sizeof(server_msg), 0);
+    cout << server_msg << "\n";
   }
 
   free(server_addr);

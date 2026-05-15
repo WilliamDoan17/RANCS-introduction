@@ -34,6 +34,8 @@ void *handle_client(void *c_info) {
     } else {
       data[received] = '\0';
       cout << "Received: " << data << " from " << client_ip << "\n";
+      char server_msg[] = "Server received data";
+      send(client_socket, server_msg, sizeof(server_msg), 0);
     }
   }
 
