@@ -24,7 +24,7 @@ void *handle_client(void *c_info) {
   char data[1024];
 
   while (1) {
-    int received = recv(client_socket, data, 1024, 0);
+    int received = recv(client_socket, data, sizeof(data) - 1, 0);
 
     if (received < 0) {
       cout << "recv failed\n";
