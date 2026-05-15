@@ -30,9 +30,10 @@ void *handle_client(void *c_info) {
       cout << "recv failed\n";
     } else if (received == 0) {
       cout << "client disconnected\n";
+      return NULL;
     } else {
       data[received] = '\0';
-      cout << "Received: " << data << "from " << client_ip << "\n";
+      cout << "Received: " << data << " from " << client_ip << "\n";
     }
   }
 
@@ -50,7 +51,7 @@ void server() {
   char port[] = "3000";
 
   if (getaddrinfo(hostname, port, &hints, &res) != 0) {
-    cout << "Couldn't run server\n";
+    cout << "Couldn't get host device address from hostname\n";
     return;
   };
 
