@@ -5,3 +5,14 @@
 // Example:
 //   n = 7 (0111), pos = 1 -> 7 & ~(1 << 1) = 7 & ~2 = 7 & 5 = 5 (0101)
 //   n = 7 (0111), pos = 2 -> 7 & ~(1 << 2) = 7 & ~4 = 7 & 3 = 3 (0011)
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int num, pos;
+  cin >> num >> pos;
+
+  cout << (num & (~(1 << pos))) << "\n";
+}
