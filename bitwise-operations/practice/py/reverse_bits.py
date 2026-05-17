@@ -2,8 +2,4 @@
 # Reverse the bits of a given 32-bit unsigned integer.
 #
 # Example:
-#   Input:  00000010100101000001111010011100  (43261596)
-#   Output: 00111001011110000010100101000000  (964176192)
-#
-# Python note: integers are arbitrary precision, so you must mask to 32 bits
-#   with (result & 0xFFFFFFFF) at the end if the sign bit matters.
+#   43261596 -> 964176192

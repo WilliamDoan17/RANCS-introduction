@@ -2,7 +2,4 @@
 // Given two integers a and b, return their sum without using + or -.
 //
 // Example:
-//   a = 1 (01), b = 3 (11)
-//   Round 1: sum = 01 ^ 11 = 10 (2),  carry = (01 & 11) << 1 = 10 << 1 = 100 (4)
-//   Round 2: sum = 10 ^ 100 = 110 (6), carry = (10 & 100) << 1 = 0
-//   Result: 6
+//   a = 1, b = 3 -> 4

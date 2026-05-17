@@ -3,8 +3,8 @@
 // return whether the bit at pos is 1.
 //
 // Example:
-//   n = 5 (0101), pos = 2 -> (5 >> 2) & 1 = 1 & 1 = 1  -> bit is set
-//   n = 5 (0101), pos = 1 -> (5 >> 1) & 1 = 2 & 1 = 0  -> bit is not set
+//   n = 5, pos = 2 -> 1
+//   n = 5, pos = 1 -> 0
 #include <iostream>
 using namespace std;
 

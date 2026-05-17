@@ -3,7 +3,4 @@
 // return the only number in that range that is missing from the array.
 //
 // Example:
-//   nums = [3, 0, 1]  (n = 3, range 0..3, missing 2)
-//   XOR indices: 0 ^ 1 ^ 2 ^ 3 = 0
-//   XOR values:  3 ^ 0 ^ 1     = 2
-//   Result: 0 ^ 2 = 2
+//   [3, 0, 1] -> 2
