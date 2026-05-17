@@ -33,4 +33,17 @@ My notes about Bitwise Operators
 - Compares two bits
 - If both bits are different, returns 1. Otherwise, returns 0.
 
+| Bit 1 | Bit 2 | Result |
+| --- | --- | --- |
+| 0 | 0 | 0 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 0 |
+
+- Example: `100101` ^ `10011` = `110110`
+
+### Bitwise NOT (~): 
+
+
+
 
