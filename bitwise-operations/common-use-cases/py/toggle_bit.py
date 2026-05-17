@@ -5,3 +5,9 @@
 # Example:
 #   n = 5, pos = 0 -> 4
 #   n = 4, pos = 1 -> 6
+
+if __name__ == "__main__":
+    num = int(input())
+    pos = int(input())
+
+    print(num ^ (1 << pos))
