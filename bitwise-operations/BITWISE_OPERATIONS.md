@@ -43,7 +43,18 @@ My notes about Bitwise Operators
 - Example: `100101` ^ `10011` = `110110`
 
 ### Bitwise NOT (~): 
+- Flips the bit of a single operand
+- Every 1 becomes a 0, and every 0 becomes a 1
 
+Example: 
+```python
+x = 9
+# x in bin: 1001
+y = ~x
+# y in bin: 0110
+```
+
+Note: signed integer behavior: ~x becomes -(x + 1)
 
 
 
