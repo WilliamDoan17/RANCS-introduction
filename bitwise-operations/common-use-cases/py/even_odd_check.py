@@ -4,6 +4,7 @@
 # Example:
 #   n = 5 -> 1 (odd)
 #   n = 4 -> 0 (even)
+
 if __name__ == "__main__":
     num = int(input())
     print(num & 1)
