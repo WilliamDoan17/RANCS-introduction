@@ -6,5 +6,9 @@
 #   n = 7 (0111), pos = 1 -> 7 & ~(1 << 1) = 7 & ~2 = 5 (0101)
 #   n = 7 (0111), pos = 2 -> 7 & ~(1 << 2) = 7 & ~4 = 3 (0011)
 #
-# Note: In Python, integers have arbitrary precision so ~n = -(n+1).
-#   The mask ~(1 << pos) still works correctly due to two's complement behavior.
+
+if __name__ == "__main__":
+    num = int(input())
+    pos = int(input())
+
+    print(num & (~(1 << pos)))
