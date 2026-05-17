@@ -5,3 +5,14 @@
 // Example:
 //   n = 5, pos = 0 -> 4
 //   n = 4, pos = 1 -> 6
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int num, pos;
+  cin >> num >> pos;
+
+  cout << (num ^ (1 << pos)) << "\n";
+}
