@@ -56,5 +56,17 @@ y = ~x
 
 Note: signed integer behavior: ~x becomes -(x + 1)
 
+## The Shift Operators
 
+### Left Shift (<<): 
+- Shift the bits of a number to the left by a specified number of positions, padding with zeros on the left
+- = multiply by 2^n
+
+Example: `101001` << 2 = `10100100`
+
+### Right Shift (>>):
+- Shift the bits of a number to the right by a specified number of positions
+- = floor division by 2^n
+
+Example: `101001` >> 4 = `10`
 
