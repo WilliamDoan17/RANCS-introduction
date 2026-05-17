@@ -2,11 +2,6 @@
 // Given an integer n, return an array ans of length n+1 where ans[i] is the
 // number of 1-bits in the binary representation of i (for 0 <= i <= n).
 //
-// Approach: Dynamic programming using bit shift.
-//   dp[i] = dp[i >> 1] + (i & 1)
-//   - (i >> 1) drops the LSB — that subproblem is already solved.
-//   - (i & 1) adds 1 if the LSB of i itself is set.
-//
 // Example:
 //   n = 5 -> [0, 1, 1, 2, 1, 2]
 //   dp[0]=0, dp[1]=dp[0]+1=1, dp[2]=dp[1]+0=1,

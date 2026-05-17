@@ -1,11 +1,6 @@
 // Problem: Add Two Integers Without + or - (LeetCode 371)
 // Given two integers a and b, return their sum without using + or -.
 //
-// Approach: Simulate binary addition with XOR and AND.
-//   - a ^ b  produces the sum bits (no carry propagation).
-//   - (a & b) << 1  produces the carry bits shifted into position.
-//   Repeat with the new sum and carry until carry is 0.
-//
 // Example:
 //   a = 1 (01), b = 3 (11)
 //   Round 1: sum = 01 ^ 11 = 10 (2),  carry = (01 & 11) << 1 = 10 << 1 = 100 (4)

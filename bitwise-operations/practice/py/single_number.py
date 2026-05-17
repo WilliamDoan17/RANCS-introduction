@@ -4,10 +4,6 @@
 #
 # Constraints: Linear time O(n), constant space O(1).
 #
-# Approach: XOR all elements together.
-#   Since a ^ a = 0 and a ^ 0 = a, all duplicate pairs cancel out,
-#   leaving only the unique element.
-#
 # Example:
 #   [4, 1, 2, 1, 2]
 #   4 ^ 1 ^ 2 ^ 1 ^ 2

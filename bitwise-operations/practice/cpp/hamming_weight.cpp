@@ -2,10 +2,6 @@
 // Given an unsigned 32-bit integer, return the number of '1' bits it has,
 // also known as the Hamming weight or popcount.
 //
-// Approach: Brian Kernighan's algorithm.
-//   n & (n - 1) clears the lowest set bit each iteration.
-//   Count how many times we can do this before n reaches 0.
-//
 // Example:
 //   n = 11 (binary: 1011)
 //   Step 1: 1011 & 1010 = 1010  (count = 1)
