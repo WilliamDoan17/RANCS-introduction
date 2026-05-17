@@ -5,3 +5,12 @@
 // Example:
 //   n = 5 (0101), pos = 2 -> (5 >> 2) & 1 = 1 & 1 = 1  -> bit is set
 //   n = 5 (0101), pos = 1 -> (5 >> 1) & 1 = 2 & 1 = 0  -> bit is not set
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num, pos;
+  cin >> num >> pos;
+
+  cout << ((num >> pos) & 1) << endl;
+}
