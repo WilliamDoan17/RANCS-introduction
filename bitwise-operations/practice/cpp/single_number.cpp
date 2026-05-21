@@ -6,3 +6,22 @@
 //
 // Example:
 //   [4, 1, 2, 1, 2] -> 4
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n;
+  cin >> n;
+
+  int a;
+  int result = 0;
+
+  for (int i = 0; i < n; i++) {
+    cin >> a;
+    result ^= a;
+  }
+
+  cout << result << "\n";
+}
