@@ -6,3 +6,12 @@
 #
 # Example:
 #   [4, 1, 2, 1, 2] -> 4
+
+if __name__ == "__main__":
+    n = int(input())
+    result = 0
+
+    for i in range(n):
+        result ^= int(input())
+
+    print(result)
