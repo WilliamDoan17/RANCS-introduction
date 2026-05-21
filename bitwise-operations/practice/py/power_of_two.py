@@ -10,9 +10,5 @@
 if __name__ == "__main__":
     n = int(input())
 
-    if (n <= 0):
-        print(0)
-        exit(0)
+    print(n > 0 and (n & (n - 1)) == 0)
 
-    print(~n)
-    print(~(n - 1))
