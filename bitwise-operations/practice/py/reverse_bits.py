@@ -6,5 +6,12 @@
 
 if __name__ == "__main__":
     n = int(input())
+    result = 0
 
-    print(~n)
+    for _ in range(32):
+        result <<= 1
+        result |= n & 1
+        n >>= 1
+
+    print(result)
+
