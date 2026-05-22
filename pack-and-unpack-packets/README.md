@@ -2,11 +2,11 @@
 Demonstrates packing and unpacking packets — converting ints, floats, and strings to raw bytes and back, using both little endian and big endian byte order.
 
 ## How it works
-- A UDP client packs values into raw bytes and sends them to a server
-- The server receives the data and displays:
+- The client chooses a data type (int, float, or string), packs it into raw bytes with a type header, and sends it over UDP
+- The server receives the packet, reads the type header to infer the data type, and prints:
   - the raw bits as received
-  - the bytes after interpreting byte order
-  - the unpacked values as int, float, and string
+  - the bytes after interpreting byte order and type
+  - the decoded value (int, float, or string)
 
 ## Implementation
 Two approaches are demonstrated side by side:
