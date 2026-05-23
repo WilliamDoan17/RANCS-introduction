@@ -122,7 +122,6 @@ int main() {
       cout << "Empty data\n";
       continue;
     }
-
   }
 
   free(server_addr);
