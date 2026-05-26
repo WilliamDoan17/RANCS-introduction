@@ -23,7 +23,23 @@ if __name__ == "__main__":
     server_addr = (server_hostname, server_port)
 
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
-        data_type = DataType(ord(input("Specify data type to send data ('i' for int, 'f' for float, 's' for string): ")))
+        while 1:
+            data_type = DataType(ord(input("Specify data type to send data ('i' for int, 'f' for float, 's' for string): ")))
+
+            print("Enter data: ", end = "")
+            data = bytes()
+
+            match(data_type): 
+                case DataType.INT:
+                    data = from_int_to_le(int(input())) 
+                case DataType.FLOAT:
+                    data = from_float_to_le(float(input()))
+                case DataType.STRING:
+                    data = input().encode()
+
+            unpacked = pack_data(data, data_type)
+
+            s.sendto(unpacked, server_addr)
 
 
 
