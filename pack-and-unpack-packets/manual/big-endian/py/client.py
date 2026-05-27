@@ -1,5 +1,4 @@
 import socket
-import struct 
 from enum import Enum
 
 class DataType(Enum):
@@ -7,47 +6,33 @@ class DataType(Enum):
     FLOAT = ord('f')
     STRING = ord('s')
 
-def pack_data_int(data: int) -> bytes:
-    data = data & 0xFFFFFFFF
-    result = bytearray([ord('i')])
-    for i in range(4):
-        result.append(data >> (24 - 8 * i) & 0xFF) 
-    return bytes(result);
+def from_int_to_be(data: int) -> bytes:
+    pass
 
-def pack_data_float(data: float) -> bytes:
-    return bytes([ord('f')]) + struct.pack('>f', data)
+def from_float_to_be(data: float) -> bytes:
+    pass
 
-def pack_data_string(data: str) -> bytes:
-    return bytes([ord('s')]) + bytes([ord(ch) for ch in data])
+def pack_data(data: bytes, data_type: DataType) -> bytes:
+    return bytes([data_type.value]) + data
 
 if __name__ == "__main__":
+    server_hostname = input("Enter server hostname: ")
+    server_port = int(input("Enter server port: "))
+    server_addr = (server_hostname, server_port)
+
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
-        server_hostname = input("Enter server hostname: ")
-        server_port = int(input("Enter server port: "))
+        while True:
+            data_type = DataType(ord(input("Specify data type ('i' for int, 'f' for float, 's' for string): ")))
+            data = bytes()
 
-        server_ip = socket.gethostbyname(server_hostname)
-
-        server_addr = (server_ip, server_port)
-
-        while (1):
-            data_type = DataType(ord(input("Specify type of data ('i' for int, 'f' for float, 's' for string): ")))
-
-            data_bytes = bytearray() 
-
-            match(data_type):
+            print("Enter data: ", end="")
+            match data_type:
                 case DataType.INT:
-                    data_int = int(input("Enter data: "))
-                    data_bytes = pack_data_int(data_int)
+                    data = from_int_to_be(int(input()))
                 case DataType.FLOAT:
-                    data_float = float(input("Enter data: "))
-                    data_bytes = pack_data_float(data_float)
+                    data = from_float_to_be(float(input()))
                 case DataType.STRING:
-                    data_string = input("Enter data: ")
-                    data_bytes = pack_data_string(data_string)
+                    data = input().encode()
 
-            s.sendto(data_bytes, server_addr)
-
-
-
-
-
+            packed = pack_data(data, data_type)
+            s.sendto(packed, server_addr)

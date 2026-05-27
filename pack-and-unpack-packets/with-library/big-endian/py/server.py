@@ -43,7 +43,7 @@ if __name__ == "__main__":
             print_binary(data)
 
             unpacked, data_type = unpack_data(data)
-            print("Unpacked", end = "")
+            print("Unpacked: ", end = "")
             print_binary(unpacked)
 
             print("Decoded: ", end = "")

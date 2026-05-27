@@ -7,11 +7,11 @@ class DataType(Enum):
     FLOAT = ord('f')
     STRING = ord('s')
 
-def print_binary(data: bytes, size: int) -> None:
-    for i in range(size):
+def print_binary(data: bytes) -> None:
+    for i in range(len(data)):
         for bit in range(7, -1, -1):
-            print(data[i] >> bit & 1, end = "")
-        print(end = " ")
+            print(data[i] >> bit & 1, end="")
+        print(end=" ")
     print()
 
 def unpack_data(data: bytes) -> tuple[bytes, DataType]:
@@ -35,18 +35,18 @@ if __name__ == "__main__":
 
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
         s.bind(server_addr)
-        print(f"Server is running wth hostname {hostname} at {ip}:{port}")
+        print(f"Server is running with hostname {hostname} at {ip}:{port}")
 
-        while 1:
+        while True:
             data = s.recv(1024)
-            print("Bytes received: ", end = "")
-            print_binary(data, len(data))
+            print("Received bytes: ", end="")
+            print_binary(data)
 
             unpacked, data_type = unpack_data(data)
-            print("Unpacked: ", end = "")
-            print_binary(unpacked, len(unpacked))
+            print("Unpacked: ", end="")
+            print_binary(unpacked)
 
-            print("Decoded: ", end = "")
+            print("Decoded: ", end="")
             match data_type:
                 case DataType.INT:
                     print(from_le_to_int(unpacked))
