@@ -1,4 +1,5 @@
 import socket
+import struct
 from enum import Enum
 
 class DataType(Enum):
@@ -18,10 +19,18 @@ def unpack_data(data: bytes) -> tuple[bytes, DataType]:
     return (data[1:], data_type)
 
 def from_be_to_int(data: bytes) -> int:
-    pass
+    result = 0
+    
+    for i in range(4):
+        result |= data[i] << (24 - 8 * i)
+
+    if result & 0x80000000:
+        result -= 0x100000000
+
+    return result
 
 def from_be_to_float(data: bytes) -> float:
-    pass
+    return struct.unpack('>f', data)[0]
 
 if __name__ == "__main__":
     hostname = socket.gethostname()

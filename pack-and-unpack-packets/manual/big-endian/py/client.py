@@ -1,4 +1,5 @@
 import socket
+import struct
 from enum import Enum
 
 class DataType(Enum):
@@ -7,10 +8,10 @@ class DataType(Enum):
     STRING = ord('s')
 
 def from_int_to_be(data: int) -> bytes:
-    pass
+    return bytes([data >> (24 - 8 * i) & 0xFF for i in range(4)])
 
 def from_float_to_be(data: float) -> bytes:
-    pass
+    return struct.pack('>f', data)
 
 def pack_data(data: bytes, data_type: DataType) -> bytes:
     return bytes([data_type.value]) + data
