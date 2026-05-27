@@ -77,13 +77,14 @@ int main() {
   }
 
   int server_socket = socket(AF_INET, SOCK_DGRAM, 0);
-  if (server_socket == 0) {
+  if (server_socket < 0) {
     cout << "Couldn't initiate server socket\n";
     return EXIT_FAILURE;
   }
 
   if (bind(server_socket, (sockaddr *)server_addr, sizeof(*server_addr)) != 0) {
     cout << "Couldn't bind server to address\n";
+    free(server_addr);
     close(server_socket);
     return EXIT_FAILURE;
   }

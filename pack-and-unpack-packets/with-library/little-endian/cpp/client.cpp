@@ -32,7 +32,7 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-void from_int_to_le(char dest[], int data) {
+void from_int_to_le(char dest[], int32_t data) {
   uint32_t raw = htole32(static_cast<uint32_t>(data));
 
   memcpy(dest, &raw, sizeof(raw));
@@ -68,7 +68,7 @@ int main() {
   }
 
   int client_socket = socket(AF_INET, SOCK_DGRAM, 0);
-  if (client_socket == 0) {
+  if (client_socket < 0) {
     cout << "Couldn't initiate client socket\n";
     return EXIT_FAILURE;
   }

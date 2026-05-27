@@ -68,7 +68,7 @@ int main() {
   }
 
   int client_socket = socket(AF_INET, SOCK_DGRAM, 0);
-  if (client_socket == 0) {
+  if (client_socket < 0) {
     cout << "Couldn't initiate client socket\n";
     return EXIT_FAILURE;
   }

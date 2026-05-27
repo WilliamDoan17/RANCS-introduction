@@ -85,7 +85,7 @@ int main() {
   }
 
   int server_socket = socket(AF_INET, SOCK_DGRAM, 0);
-  if (server_socket == 0) {
+  if (server_socket < 0) {
     cout << "Couldn't initiate server socket\n";
     return EXIT_FAILURE;
   }

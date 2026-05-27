@@ -45,20 +45,14 @@ void unpack_data(char dest[], char data[], DataType *data_type, int *size) {
   *data_type = (DataType)data[0];
   *size -= 1;
 
-  if (*data_type == STRING) {
-    strcpy(dest, data + 1);
-  } else {
-    for (int i = 0; i < *size; i++) {
-      dest[i] = data[*size - i];
-    }
-  }
+  memcpy(dest, data + 1, *size);
 }
 
 int32_t from_le_to_int(char data[]) {
   int32_t result = 0;
 
   for (int i = 0; i < 4; i++) {
-    result |= (uint8_t)data[i] << (24 - 8 * i);
+    result |= (uint8_t)data[i] << (8 * i);
   }
 
   return result;
@@ -68,7 +62,7 @@ float from_le_to_float(char data[]) {
   uint32_t raw = 0;
 
   for (int i = 0; i < 4; i++) {
-    raw |= (uint32_t)((uint8_t)data[i] << (24 - 8 * i));
+    raw |= (uint32_t)((uint8_t)data[i] << (8 * i));
   }
 
   float result;
@@ -92,7 +86,7 @@ int main() {
   }
 
   int server_socket = socket(AF_INET, SOCK_DGRAM, 0);
-  if (server_socket == 0) {
+  if (server_socket < 0) {
     cout << "Couldn't initiate server socket\n";
     return EXIT_FAILURE;
   }
