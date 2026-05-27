@@ -32,11 +32,19 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-void from_int_to_le(char dest[], int data) {}
+void from_int_to_le(char dest[], int data) {
+  uint32_t raw = htole32(static_cast<uint32_t>(data));
+
+  memcpy(dest, &raw, sizeof(raw));
+}
 
 void from_float_to_le(char dest[], float data) {}
 
-void pack_data(char dest[], char data[], DataType data_type, int *size) {}
+void pack_data(char dest[], char data[], DataType data_type, int *size) {
+  dest[0] = (char)data_type;
+  memcpy(dest + 1, data, *size);
+  *size += 1;
+}
 
 int main() {
   char server_hostname[1024];
