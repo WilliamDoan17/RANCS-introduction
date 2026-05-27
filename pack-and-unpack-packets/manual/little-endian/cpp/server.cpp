@@ -96,7 +96,7 @@ int main() {
 
   sockaddr_in *server_addr = get_server_addr(hostname, port);
   if (!server_addr) {
-    cout << "Couldn't get server address information\n";
+    cout << "Couldn't get server address\n";
     close(server_socket);
     return EXIT_FAILURE;
   }

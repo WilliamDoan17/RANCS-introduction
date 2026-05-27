@@ -16,21 +16,20 @@ enum DataType {
   STRING = 's',
 };
 
-sockaddr_in *get_host_addr(char hostname[], char port[]) {
+sockaddr_in *get_server_addr(char hostname[], char port[]) {
   addrinfo hints = {.ai_family = AF_INET, .ai_socktype = SOCK_DGRAM};
   addrinfo *res;
 
   if (getaddrinfo(hostname, port, &hints, &res) != 0) {
-    cout << "Cannot get address information for server\n";
     return NULL;
   }
 
-  sockaddr_in *host_addr = (sockaddr_in *)malloc(sizeof(sockaddr_in));
-  memcpy(host_addr, res->ai_addr, res->ai_addrlen);
+  sockaddr_in *server_addr = (sockaddr_in *)malloc(sizeof(sockaddr_in));
+  memcpy(server_addr, res->ai_addr, res->ai_addrlen);
 
   freeaddrinfo(res);
 
-  return host_addr;
+  return server_addr;
 }
 
 void print_binary(char *data, size_t size) {
@@ -92,9 +91,10 @@ int main() {
 
   cin >> port;
 
-  sockaddr_in *server_addr = get_host_addr(hostname, port);
+  sockaddr_in *server_addr = get_server_addr(hostname, port);
 
   if (!server_addr) {
+    cout << "Couldn't get server address\n";
     return EXIT_FAILURE;
   }
 

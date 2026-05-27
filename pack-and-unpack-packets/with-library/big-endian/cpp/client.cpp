@@ -67,7 +67,7 @@ int main() {
 
   sockaddr_in *server_addr = get_server_addr(server_hostname, server_port);
   if (!server_addr) {
-    cout << "Couldn't find server address\n";
+    cout << "Couldn't get server address\n";
     return EXIT_FAILURE;
   }
 
