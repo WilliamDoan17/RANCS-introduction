@@ -31,7 +31,8 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-void print_binary(char data[], int size) {
+void print_binary(char data[]) {
+  int size = strlen(data);
   for (int i = 0; i < size; i++) {
     for (int bit = 7; bit >= 0; bit--) {
       cout << (data[i] >> bit & 1);
@@ -113,14 +114,14 @@ int main() {
     }
 
     cout << "Bytes received: ";
-    print_binary(data, received);
+    print_binary(data);
 
     DataType data_type;
     char unpacked[received - 1];
     unpack_data(unpacked, data, &data_type, &received);
 
     cout << "Unpacked: ";
-    print_binary(unpacked, received);
+    print_binary(unpacked);
 
     cout << "Decoded: ";
     switch (data_type) {
