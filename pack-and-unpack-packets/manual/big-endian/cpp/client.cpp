@@ -32,8 +32,11 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
 }
 
 void from_int_to_be(char dest[], int32_t data) {
+  uint32_t raw;
+  memcpy(&raw, &data, sizeof(raw));
+
   for (int i = 0; i < 4; i++) {
-    dest[i] = (char)(data >> (24 - 8 * i));
+    dest[i] = raw >> (24 - 8 * i) & 0xFF;
   }
 }
 
@@ -42,12 +45,15 @@ void from_float_to_be(char dest[], float data) {
   memcpy(&raw, &data, sizeof(raw));
 
   for (int i = 0; i < 4; i++) {
-    dest[i] = (char)(raw >> (24 - 8 * i));
+    dest[i] = raw >> (24 - 8 * i) & 0xFF;
   }
 }
 
 void pack_data(char dest[], char data[], DataType data_type, int *size) {
-  dest[0] = data_type;
+  dest[0] = (char)data_type;
+
+  memcpy(dest + 1, data, *size);
+  *size += 1;
 }
 
 int main() {
