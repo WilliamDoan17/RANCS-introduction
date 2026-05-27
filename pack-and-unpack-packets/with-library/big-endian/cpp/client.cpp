@@ -31,35 +31,16 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-void pack_data(char *dest, char *data, int *size, DataType data_type) {
-  *dest = (char)data_type;
-  memcpy(dest + 1, data, *size);
-  (*size)++;
-}
+void from_int_to_be(char dest[], int32_t data) {}
 
-void from_int_to_be(char *dest, int32_t data, int *size) {
-  uint32_t be = htobe32(static_cast<uint32_t>(data));
-  memcpy(dest, &be, sizeof(data));
-  *size = sizeof(data);
-}
+void from_float_to_be(char dest[], float data) {}
 
-void from_float_to_be(char *dest, float data, int *size) {
-  uint32_t raw;
-  memcpy(&raw, &data, sizeof(data));
-  raw = htobe32(raw);
-  memcpy(dest, &raw, sizeof(raw));
-  *size = sizeof(data);
-}
-
-void from_string_to_be(char *dest, char *data, int *size) {
-  strcpy(dest, data);
-  *size = strlen(data) + 1;
-}
+void pack_data(char dest[], char data[], DataType data_type, int *size) {}
 
 int main() {
   char server_hostname[1024];
   cout << "Enter server hostname: ";
-  cin.getline(server_hostname, sizeof(server_hostname));
+  cin >> server_hostname;
 
   char server_port[1024];
   cout << "Enter server port: ";
@@ -78,41 +59,41 @@ int main() {
   }
 
   while (true) {
-    char data_type_char;
-    cout << "Specify type of data to send ('i' for integer, 'f' for float, 's' "
-            "for string): ";
-    cin >> data_type_char;
-
-    DataType data_type = (DataType)data_type_char;
+    char type;
+    cout << "Specify data type ('i' for int, 'f' for float, 's' for string): ";
+    cin >> type;
+    DataType data_type = (DataType)type;
 
     char data[1024];
-    int send_size;
-
+    int size = 0;
     cout << "Enter data: ";
     cin.ignore();
 
     switch (data_type) {
-    case INT:
-      int data_int;
+    case INT: {
+      int32_t data_int;
       cin >> data_int;
-      from_int_to_be(data, data_int, &send_size);
+      from_int_to_be(data, data_int);
+      size = 4;
       break;
-    case FLOAT:
+    }
+    case FLOAT: {
       float data_float;
       cin >> data_float;
-      from_float_to_be(data, data_float, &send_size);
+      from_float_to_be(data, data_float);
+      size = 4;
       break;
+    }
     case STRING:
-      char data_string[1024];
-      cin.getline(data_string, sizeof(data_string));
-      from_string_to_be(data, data_string, &send_size);
+      cin.getline(data, sizeof(data));
+      size = strlen(data) + 1;
       break;
     }
 
     char packed[1024];
-    pack_data(packed, data, &send_size, data_type);
+    pack_data(packed, data, data_type, &size);
 
-    sendto(client_socket, packed, send_size, 0, (sockaddr *)server_addr,
+    sendto(client_socket, packed, size, 0, (sockaddr *)server_addr,
            sizeof(*server_addr));
   }
 
