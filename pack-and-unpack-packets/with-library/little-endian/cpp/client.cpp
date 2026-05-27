@@ -38,7 +38,13 @@ void from_int_to_le(char dest[], int data) {
   memcpy(dest, &raw, sizeof(raw));
 }
 
-void from_float_to_le(char dest[], float data) {}
+void from_float_to_le(char dest[], float data) {
+  uint32_t raw;
+  memcpy(&raw, &data, sizeof(raw));
+  raw = htole32(raw);
+
+  memcpy(dest, &raw, sizeof(raw));
+}
 
 void pack_data(char dest[], char data[], DataType data_type, int *size) {
   dest[0] = (char)data_type;
