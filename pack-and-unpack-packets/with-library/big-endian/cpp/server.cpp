@@ -1,6 +1,6 @@
 #include <arpa/inet.h>
 #include <cstdlib>
-#include <functional>
+#include <endian.h>
 #include <iostream>
 #include <netdb.h>
 #include <netinet/in.h>
@@ -38,24 +38,22 @@ void print_binary(char data[], int size) {
     }
     cout << " ";
   }
-
   cout << "\n";
 }
 
-void unpack_data(char *dest, char data[], DataType *data_type, int *size) {
+void unpack_data(char dest[], char data[], DataType *data_type, int *size) {
   *data_type = DataType(data[0]);
   *size -= 1;
-
   memcpy(dest, data + 1, *size);
 }
 
-int32_t from_binary_to_int(char data[]) {
+int32_t from_be_to_int(char data[]) {
   uint32_t raw;
   memcpy(&raw, data, sizeof(raw));
   return static_cast<int32_t>(be32toh(raw));
 }
 
-float from_binary_to_float(char data[]) {
+float from_be_to_float(char data[]) {
   uint32_t raw;
   memcpy(&raw, data, sizeof(raw));
   raw = be32toh(raw);
@@ -63,7 +61,6 @@ float from_binary_to_float(char data[]) {
   memcpy(&result, &raw, sizeof(result));
   return result;
 }
-void from_binary_to_string(char *dest, char data[]) { strcpy(dest, data); }
 
 int main() {
   char hostname[1024];
@@ -87,57 +84,50 @@ int main() {
 
   if (bind(server_socket, (sockaddr *)server_addr, sizeof(*server_addr)) != 0) {
     cout << "Couldn't bind server to address\n";
-    return EXIT_FAILURE;
     close(server_socket);
+    return EXIT_FAILURE;
   }
 
   char server_ip[INET_ADDRSTRLEN];
   inet_ntop(AF_INET, &server_addr->sin_addr, server_ip, sizeof(server_ip));
-
   cout << "Server is running with hostname " << hostname << " at " << server_ip
-       << ":" << htons(server_addr->sin_port) << "\n";
+       << ":" << ntohs(server_addr->sin_port) << "\n";
 
   while (true) {
     char data[1024];
-    sockaddr_in client_addr;
-    socklen_t client_addrlen;
-
-    int received = recvfrom(server_socket, data, sizeof(data), 0,
-                            (sockaddr *)&client_addr, &client_addrlen);
+    int received = recv(server_socket, data, sizeof(data), 0);
 
     if (received < 0) {
-      cout << "Error on receive\n";
+      cout << "Receive error\n";
       continue;
     } else if (received == 0) {
       cout << "Empty data\n";
       continue;
     }
 
-    cout << "Data received: ";
+    cout << "Received bytes: ";
     print_binary(data, received);
 
-    char unpacked[received - 1];
+    char unpacked[1024];
     DataType data_type;
-    unpack_data(unpacked, data, &data_type, &received);
+    int size = received;
+    unpack_data(unpacked, data, &data_type, &size);
 
     cout << "Unpacked: ";
-    print_binary(unpacked, received);
+    print_binary(unpacked, size);
 
     cout << "Decoded: ";
     switch (data_type) {
     case INT:
-      cout << from_binary_to_int(unpacked);
+      cout << from_be_to_int(unpacked) << "\n";
       break;
     case FLOAT:
-      cout << from_binary_to_float(unpacked);
+      cout << from_be_to_float(unpacked) << "\n";
       break;
     case STRING:
-      char data_string[received];
-      from_binary_to_string(data_string, unpacked);
-      cout << data_string;
+      cout << unpacked << "\n";
       break;
     }
-    cout << "\n";
   }
 
   free(server_addr);

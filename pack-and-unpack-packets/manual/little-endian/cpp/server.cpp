@@ -1,5 +1,4 @@
 #include <arpa/inet.h>
-#include <cstddef>
 #include <cstdint>
 #include <cstdlib>
 #include <iostream>
@@ -32,30 +31,30 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-void print_binary(char bin[], size_t size) {
+void print_binary(char data[], int size) {
   for (int i = 0; i < size; i++) {
     for (int bit = 7; bit >= 0; bit--) {
-      cout << (bin[i] >> bit & 1);
+      cout << (data[i] >> bit & 1);
     }
     cout << " ";
   }
   cout << "\n";
 }
 
-void unpack_data(char dest[], char src[], DataType *data_type, size_t *size) {
-  *data_type = (DataType)src[0];
+void unpack_data(char dest[], char data[], DataType *data_type, int *size) {
+  *data_type = (DataType)data[0];
   *size -= 1;
 
   if (*data_type == STRING) {
-    strcpy(dest, src + 1);
+    strcpy(dest, data + 1);
   } else {
     for (int i = 0; i < *size; i++) {
-      dest[i] = src[*size - i];
+      dest[i] = data[*size - i];
     }
   }
 }
 
-int32_t from_binary_to_int(char data[]) {
+int32_t from_le_to_int(char data[]) {
   int32_t result = 0;
 
   for (int i = 0; i < 4; i++) {
@@ -65,7 +64,7 @@ int32_t from_binary_to_int(char data[]) {
   return result;
 }
 
-float from_binary_to_float(char data[]) {
+float from_le_to_float(char data[]) {
   uint32_t raw = 0;
 
   for (int i = 0; i < 4; i++) {
@@ -78,8 +77,6 @@ float from_binary_to_float(char data[]) {
   return result;
 }
 
-void from_binary_to_string(char dest[], char data[]) { strcpy(dest, data); }
-
 int main() {
   char hostname[1024];
   gethostname(hostname, sizeof(hostname));
@@ -88,21 +85,20 @@ int main() {
   cout << "Assign port to your server: ";
   cin >> port;
 
+  sockaddr_in *server_addr = get_server_addr(hostname, port);
+  if (!server_addr) {
+    cout << "Couldn't get server address\n";
+    return EXIT_FAILURE;
+  }
+
   int server_socket = socket(AF_INET, SOCK_DGRAM, 0);
   if (server_socket == 0) {
     cout << "Couldn't initiate server socket\n";
     return EXIT_FAILURE;
   }
 
-  sockaddr_in *server_addr = get_server_addr(hostname, port);
-  if (!server_addr) {
-    cout << "Couldn't get server address\n";
-    close(server_socket);
-    return EXIT_FAILURE;
-  }
-
   if (bind(server_socket, (sockaddr *)server_addr, sizeof(*server_addr)) != 0) {
-    cout << "Couldn't bind server socket to address\n";
+    cout << "Couldn't bind server to address\n";
     free(server_addr);
     close(server_socket);
     return EXIT_FAILURE;
@@ -110,57 +106,43 @@ int main() {
 
   char server_ip[INET_ADDRSTRLEN];
   inet_ntop(AF_INET, &server_addr->sin_addr, server_ip, sizeof(server_ip));
-
   cout << "Server is running with hostname " << hostname << " at " << server_ip
        << ":" << ntohs(server_addr->sin_port) << "\n";
 
   while (true) {
-    char buf[1024];
+    char data[1024];
+    int received = recv(server_socket, data, sizeof(data), 0);
 
-    sockaddr_in client_addr;
-    socklen_t client_addrlen = sizeof(client_addr);
-
-    size_t received = recvfrom(server_socket, buf, sizeof(buf), 0,
-                               (sockaddr *)&client_addr, &client_addrlen);
-
-    if (received == 0) {
-      cout << "Empty data\n";
-      continue;
-    } else if (received < 0) {
+    if (received < 0) {
       cout << "Receive error\n";
       continue;
+    } else if (received == 0) {
+      cout << "Empty data\n";
+      continue;
     }
 
-    cout << "Binary received: ";
+    cout << "Received bytes: ";
+    print_binary(data, received);
 
-    print_binary(buf, received);
-
+    char unpacked[1024];
     DataType data_type;
-    char unpacked[received];
-    unpack_data(unpacked, buf, &data_type, &received);
+    int size = received;
+    unpack_data(unpacked, data, &data_type, &size);
 
-    cout << "Unpacked binary: ";
-    print_binary(unpacked, received);
+    cout << "Unpacked: ";
+    print_binary(unpacked, size);
 
-    cout << "Decoded data: ";
-
+    cout << "Decoded: ";
     switch (data_type) {
-    case INT: {
-      int32_t data_int = from_binary_to_int(unpacked);
-      cout << data_int << "\n";
+    case INT:
+      cout << from_le_to_int(unpacked) << "\n";
       break;
-    }
-    case FLOAT: {
-      float data_float = from_binary_to_float(unpacked);
-      cout << data_float << "\n";
+    case FLOAT:
+      cout << from_le_to_float(unpacked) << "\n";
       break;
-    }
-    case STRING: {
-      char data_string[received];
-      from_binary_to_string(data_string, unpacked);
-      cout << data_string << "\n";
+    case STRING:
+      cout << unpacked << "\n";
       break;
-    }
     }
   }
 

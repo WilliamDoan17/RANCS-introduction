@@ -31,8 +31,7 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-void print_binary(char data[]) {
-  int size = strlen(data);
+void print_binary(char data[], int size) {
   for (int i = 0; i < size; i++) {
     for (int bit = 7; bit >= 0; bit--) {
       cout << (data[i] >> bit & 1);
@@ -42,7 +41,7 @@ void print_binary(char data[]) {
   cout << "\n";
 }
 
-void unpack_data(char *dest, char data[], DataType *data_type, int *size) {
+void unpack_data(char dest[], char data[], DataType *data_type, int *size) {
   *data_type = (DataType)data[0];
   *size -= 1;
 
@@ -89,53 +88,50 @@ int main() {
 
   if (bind(server_socket, (sockaddr *)server_addr, sizeof(*server_addr)) != 0) {
     cout << "Couldn't bind server to address\n";
+    close(server_socket);
     return EXIT_FAILURE;
   }
 
   char server_ip[INET_ADDRSTRLEN];
   inet_ntop(AF_INET, &server_addr->sin_addr, server_ip, sizeof(server_ip));
-
   cout << "Server is running with hostname " << hostname << " at " << server_ip
        << ":" << ntohs(server_addr->sin_port) << "\n";
 
   while (true) {
     char data[1024];
-    sockaddr_in client_addr;
-    socklen_t client_addrlen;
+    int received = recv(server_socket, data, sizeof(data), 0);
 
-    int received = recvfrom(server_socket, data, sizeof(data), 0,
-                            (sockaddr *)&client_addr, &client_addrlen);
-    if (received == 0) {
-      cout << "Empty data\n";
-      continue;
-    } else if (received < 0) {
+    if (received < 0) {
       cout << "Receive error\n";
+      continue;
+    } else if (received == 0) {
+      cout << "Empty data\n";
       continue;
     }
 
-    cout << "Bytes received: ";
-    print_binary(data);
+    cout << "Received bytes: ";
+    print_binary(data, received);
 
+    char unpacked[1024];
     DataType data_type;
-    char unpacked[received - 1];
-    unpack_data(unpacked, data, &data_type, &received);
+    int size = received;
+    unpack_data(unpacked, data, &data_type, &size);
 
     cout << "Unpacked: ";
-    print_binary(unpacked);
+    print_binary(unpacked, size);
 
     cout << "Decoded: ";
     switch (data_type) {
     case INT:
-      cout << from_le_to_int(unpacked);
+      cout << from_le_to_int(unpacked) << "\n";
       break;
     case FLOAT:
-      cout << from_le_to_float(unpacked);
+      cout << from_le_to_float(unpacked) << "\n";
       break;
     case STRING:
-      cout << unpacked;
+      cout << unpacked << "\n";
+      break;
     }
-
-    cout << "\n";
   }
 
   free(server_addr);
