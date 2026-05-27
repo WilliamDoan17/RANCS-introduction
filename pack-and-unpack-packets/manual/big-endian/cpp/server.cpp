@@ -16,25 +16,24 @@ enum DataType {
   STRING = 's',
 };
 
-sockaddr_in *get_host_addr(char hostname[], char port[]) {
+sockaddr_in *get_server_addr(char hostname[], char port[]) {
   addrinfo hints = {.ai_family = AF_INET, .ai_socktype = SOCK_DGRAM};
   addrinfo *res;
 
   if (getaddrinfo(hostname, port, &hints, &res) != 0) {
-    cout << "Cannot get address information for server\n";
     return NULL;
   }
 
-  sockaddr_in *host_addr = (sockaddr_in *)malloc(sizeof(sockaddr_in));
-  memcpy(host_addr, res->ai_addr, res->ai_addrlen);
+  sockaddr_in *server_addr = (sockaddr_in *)malloc(sizeof(sockaddr_in));
+  memcpy(server_addr, res->ai_addr, res->ai_addrlen);
 
   freeaddrinfo(res);
 
-  return host_addr;
+  return server_addr;
 }
 
-void print_binary(char *data, size_t size) {
-  for (size_t i = 0; i < size; i++) {
+void print_binary(char data[], int size) {
+  for (int i = 0; i < size; i++) {
     for (int bit = 7; bit >= 0; bit--) {
       cout << ((data[i] >> bit) & 1);
     }
@@ -43,25 +42,26 @@ void print_binary(char *data, size_t size) {
   cout << "\n";
 }
 
-void unpack_data(char *dest, char *src, DataType *data_type, size_t size) {
-  *data_type = (DataType)src[0];
-  memcpy(dest, src + 1, size - 1);
+void unpack_data(char dest[], char data[], DataType *data_type, int *size) {
+  *data_type = (DataType)data[0];
+  *size -= 1;
+  memcpy(dest, data + 1, *size);
 }
 
-int32_t from_binary_to_int(char bin[]) {
+int32_t from_be_to_int(char data[]) {
   int32_t result = 0;
   for (int byte = 0; byte <= 3; byte++) {
     result <<= 8;
-    result |= (uint8_t)bin[byte];
+    result |= (uint8_t)data[byte];
   }
   return result;
 }
 
-float from_binary_to_float(char bin[]) {
+float from_be_to_float(char data[]) {
   uint32_t raw = 0;
   for (int byte = 0; byte <= 3; byte++) {
     raw <<= 8;
-    raw |= (uint8_t)bin[byte];
+    raw |= (uint8_t)data[byte];
   }
 
   float result;
@@ -70,83 +70,73 @@ float from_binary_to_float(char bin[]) {
   return result;
 }
 
-void print_decoded_data(char bin[], DataType data_type) {
-  switch (data_type) {
-  case INT:
-    cout << from_binary_to_int(bin) << "\n";
-    break;
-  case FLOAT:
-    cout << from_binary_to_float(bin) << "\n";
-    break;
-  case STRING:
-    cout << bin << "\n";
-  }
-}
-
 int main() {
-  char hostname[256];
+  char hostname[1024];
   gethostname(hostname, sizeof(hostname));
 
-  char port[256];
-  cout << "Assign a port for your server: ";
-
+  char port[1024];
+  cout << "Assign port to your server: ";
   cin >> port;
 
-  sockaddr_in *server_addr = get_host_addr(hostname, port);
-
+  sockaddr_in *server_addr = get_server_addr(hostname, port);
   if (!server_addr) {
+    cout << "Couldn't get server address\n";
     return EXIT_FAILURE;
   }
 
   int server_socket = socket(AF_INET, SOCK_DGRAM, 0);
-
-  if (server_socket == 0) {
-    cout << "Cannot initiate server socket\n";
-    free(server_addr);
+  if (server_socket < 0) {
+    cout << "Couldn't initiate server socket\n";
     return EXIT_FAILURE;
   }
 
   if (bind(server_socket, (sockaddr *)server_addr, sizeof(*server_addr)) != 0) {
-    cout << "Cannot bind server socket to address\n";
+    cout << "Couldn't bind server to address\n";
     return EXIT_FAILURE;
   }
 
   char server_ip[INET_ADDRSTRLEN];
   inet_ntop(AF_INET, &server_addr->sin_addr, server_ip, sizeof(server_ip));
-
   cout << "Server is running with hostname " << hostname << " at " << server_ip
        << ":" << ntohs(server_addr->sin_port) << "\n";
 
   while (true) {
-    char buf[1024];
-    struct sockaddr_in client_addr;
-    socklen_t client_addrlen = sizeof(client_addr);
+    char data[1024];
+    int received = recv(server_socket, data, sizeof(data), 0);
 
-    int received = recvfrom(server_socket, buf, sizeof(buf), 0,
-                            (struct sockaddr *)&client_addr, &client_addrlen);
     if (received < 0) {
       cout << "Receive error\n";
-      break;
+      continue;
     } else if (received == 0) {
       cout << "Empty data\n";
       continue;
     }
 
-    cout << "Data received: ";
-    print_binary(buf, received);
+    cout << "Received bytes: ";
+    print_binary(data, received);
 
-    char raw_unpacked[sizeof(buf)];
+    char unpacked[1024];
     DataType data_type;
+    int size = received;
+    unpack_data(unpacked, data, &data_type, &size);
 
-    unpack_data(raw_unpacked, buf, &data_type, received);
+    cout << "Unpacked: ";
+    print_binary(unpacked, size);
 
-    cout << "Raw unpacked binary: ";
-    print_binary(raw_unpacked, received - 1);
-
-    cout << "Decoded data: ";
-    print_decoded_data(raw_unpacked, data_type);
+    cout << "Decoded: ";
+    switch (data_type) {
+    case INT:
+      cout << from_be_to_int(unpacked) << "\n";
+      break;
+    case FLOAT:
+      cout << from_be_to_float(unpacked) << "\n";
+      break;
+    case STRING:
+      cout << unpacked << "\n";
+      break;
+    }
   }
 
+  free(server_addr);
   close(server_socket);
-  return EXIT_SUCCESS;
 }

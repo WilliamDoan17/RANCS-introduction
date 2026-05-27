@@ -1,39 +1,39 @@
 import socket
+import struct
 from enum import Enum
-import struct 
 
 class DataType(Enum):
     INT = ord('i')
     FLOAT = ord('f')
     STRING = ord('s')
 
-def pack_data_int(data: int) -> bytes: 
-    return bytes([ord('i')]) + bytes([data >> (byte * 8) & 0xFF for byte in range(4)]) 
+def from_int_to_le(data: int) -> bytes:
+    return bytes([data >> (8 * i) & 0xFF for i in range(4)])
 
-def pack_data_float(data: float) -> bytes:
-    return bytes([ord('f')]) + struct.pack('<f', data)
+def from_float_to_le(data: float) -> bytes:
+    return struct.pack('<f', data)
 
-def pack_data_string(data: str) -> bytes:
-    return bytes([ord('s')]) + bytes([ord(char) for char in data])
+def pack_data(data: bytes, data_type: DataType) -> bytes:
+    return bytes([data_type.value]) + data
 
 if __name__ == "__main__":
     server_hostname = input("Enter server hostname: ")
-    server_ip = socket.gethostbyname(server_hostname)
     server_port = int(input("Enter server port: "))
-    server_addr = (server_ip, server_port)
+    server_addr = (server_hostname, server_port)
 
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
-        while (1):
-            data_type = DataType(ord(input("Specify type of data to send ('i' for int, 'f' for float, 's' for string): ")))
-        
-            data = input("Enter data: ")
-            match(data_type):
+        while True:
+            data_type = DataType(ord(input("Specify data type ('i' for int, 'f' for float, 's' for string): ")))
+            data = bytes()
+
+            print("Enter data: ", end="")
+            match data_type:
                 case DataType.INT:
-                    s.sendto(pack_data_int(int(data)), server_addr)
+                    data = from_int_to_le(int(input()))
                 case DataType.FLOAT:
-                    s.sendto(pack_data_float(float(data)), server_addr)
+                    data = from_float_to_le(float(input()))
                 case DataType.STRING:
-                    s.sendto(pack_data_string(str(data)), server_addr)
-                
+                    data = input().encode()
 
-
+            packed = pack_data(data, data_type)
+            s.sendto(packed, server_addr)

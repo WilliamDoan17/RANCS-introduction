@@ -17,7 +17,7 @@ def from_float_to_le(data: float) -> bytes:
     return struct.pack('<f', data)
 
 if __name__ == "__main__":
-    server_hostname = input("Enter sever hostname: ")
+    server_hostname = input("Enter server hostname: ")
     server_port = int(input("Enter server port: "))
 
     server_addr = (server_hostname, server_port)
@@ -37,9 +37,9 @@ if __name__ == "__main__":
                 case DataType.STRING:
                     data = input().encode()
 
-            unpacked = pack_data(data, data_type)
+            packed = pack_data(data, data_type)
 
-            s.sendto(unpacked, server_addr)
+            s.sendto(packed, server_addr)
 
 
 

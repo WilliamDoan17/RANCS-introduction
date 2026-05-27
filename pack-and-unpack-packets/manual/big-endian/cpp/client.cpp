@@ -10,14 +10,17 @@
 
 using namespace std;
 
-enum DataType { FLOAT = 'f', INT = 'i', STRING = 's' };
+enum DataType {
+  INT = 'i',
+  FLOAT = 'f',
+  STRING = 's',
+};
 
 sockaddr_in *get_server_addr(char hostname[], char port[]) {
   addrinfo hints = {.ai_family = AF_INET, .ai_socktype = SOCK_DGRAM};
   addrinfo *res;
 
   if (getaddrinfo(hostname, port, &hints, &res) != 0) {
-    cout << "Couldn't get server address info\n";
     return NULL;
   }
 
@@ -28,100 +31,89 @@ sockaddr_in *get_server_addr(char hostname[], char port[]) {
   return server_addr;
 }
 
-size_t pack_data_int(char *dest, int32_t data) {
-  *dest = 'i';
+void from_int_to_be(char dest[], int32_t data) {
+  uint32_t raw;
+  memcpy(&raw, &data, sizeof(raw));
 
-  dest[1] = (data >> 24) & 0xFF;
-  dest[2] = (data >> 16) & 0xFF;
-  dest[3] = (data >> 8) & 0xFF;
-  dest[4] = data & 0xFF;
-
-  return 5;
+  for (int i = 0; i < 4; i++) {
+    dest[i] = raw >> (24 - 8 * i) & 0xFF;
+  }
 }
 
-size_t pack_data_float(char *dest, float data) {
-  *dest = 'f';
+void from_float_to_be(char dest[], float data) {
+  uint32_t raw;
+  memcpy(&raw, &data, sizeof(raw));
 
-  uint32_t data_int;
-
-  memcpy(&data_int, &data, sizeof(data_int));
-
-  dest[1] = (data_int >> 24) & 0xFF;
-  dest[2] = (data_int >> 16) & 0xFF;
-  dest[3] = (data_int >> 8) & 0xFF;
-  dest[4] = data_int & 0xFF;
-
-  return 5;
+  for (int i = 0; i < 4; i++) {
+    dest[i] = raw >> (24 - 8 * i) & 0xFF;
+  }
 }
 
-size_t pack_data_string(char *dest, char data[]) {
-  *dest = 's';
-  size_t len = strlen(data) + 1;
-  memcpy(dest + 1, data, len);
-  return 1 + len;
+void pack_data(char dest[], char data[], DataType data_type, int *size) {
+  dest[0] = (char)data_type;
+
+  memcpy(dest + 1, data, *size);
+  *size += 1;
 }
 
 int main() {
+  char server_hostname[1024];
+  cout << "Enter server hostname: ";
+  cin >> server_hostname;
+
+  char server_port[1024];
+  cout << "Enter server port: ";
+  cin >> server_port;
+
+  sockaddr_in *server_addr = get_server_addr(server_hostname, server_port);
+  if (!server_addr) {
+    cout << "Couldn't get server address\n";
+    return EXIT_FAILURE;
+  }
+
   int client_socket = socket(AF_INET, SOCK_DGRAM, 0);
-  if (client_socket == 0) {
+  if (client_socket < 0) {
     cout << "Couldn't initiate client socket\n";
     return EXIT_FAILURE;
   }
 
-  char hostname[256], port[256];
-  cout << "Enter server hostname: ";
-  cin >> hostname;
-  cout << "Enter server port: ";
-  cin >> port;
-
-  sockaddr_in *server_addr = get_server_addr(hostname, port);
-  if (!server_addr) {
-    return EXIT_FAILURE;
-  }
-
   while (true) {
-
-    char data_buf[1024];
-    DataType data_type;
     char type;
-
-    cout
-        << "Specify data type to send (f for float, i for int, s for string): ";
+    cout << "Specify data type ('i' for int, 'f' for float, 's' for string): ";
     cin >> type;
+    DataType data_type = (DataType)type;
+
+    char data[1024];
+    int size = 0;
+    cout << "Enter data: ";
     cin.ignore();
 
-    data_type = (DataType)type;
-
-    cout << "Enter data: ";
-    int data_int;
-    float data_float;
-    char data_string[sizeof(data_buf) - 1];
-    size_t packed_size = 0;
-
     switch (data_type) {
-    case INT:
+    case INT: {
+      int32_t data_int;
       cin >> data_int;
-      packed_size = pack_data_int(data_buf, data_int);
+      from_int_to_be(data, data_int);
+      size = 4;
       break;
-    case FLOAT:
+    }
+    case FLOAT: {
+      float data_float;
       cin >> data_float;
-      packed_size = pack_data_float(data_buf, data_float);
+      from_float_to_be(data, data_float);
+      size = 4;
       break;
+    }
     case STRING:
-      cin.getline(data_string, sizeof(data_string));
-      packed_size = pack_data_string(data_buf, data_string);
+      cin.getline(data, sizeof(data));
+      size = strlen(data) + 1;
       break;
     }
 
-    int sent = sendto(client_socket, data_buf, packed_size, 0,
-                      (sockaddr *)server_addr, sizeof(*server_addr));
-    if (sent < 0) {
-      cout << "Send error\n";
-      continue;
-    } else if (sent == 0) {
-      cout << "Empty data\n";
-      continue;
-    }
+    char packed[1024];
+    pack_data(packed, data, data_type, &size);
+
+    sendto(client_socket, packed, size, 0, (sockaddr *)server_addr,
+           sizeof(*server_addr));
   }
 
   free(server_addr);
