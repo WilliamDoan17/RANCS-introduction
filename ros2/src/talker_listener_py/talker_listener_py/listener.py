@@ -2,6 +2,17 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
-class Talker(Node):
-    Talker(): 
-        
+class Listener(Node):
+    def __init__(self):
+        super().__init__('listener')
+        self.subscriber_ = self.create_subscription(String, "/chatter", self.subscribe_message, 10)
+
+
+    def subscribe_message(self, msg: String) -> None:
+        self.get_logger().info(f"Received: {msg.data}")
+
+
+if __name__ == "__main__":
+    rclpy.init()
+    rclpy.spin(Listener())
+    rclpy.shutdown()
