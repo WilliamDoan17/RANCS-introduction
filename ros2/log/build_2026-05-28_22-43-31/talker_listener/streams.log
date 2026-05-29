@@ -1,0 +1,33 @@
+[0.008s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ /usr/bin/cmake /home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener -DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener
+[0.055s] -- The C compiler identification is GNU 11.4.0
+[0.102s] -- The CXX compiler identification is GNU 11.4.0
+[0.109s] -- Detecting C compiler ABI info
+[0.163s] -- Detecting C compiler ABI info - done
+[0.170s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.170s] -- Detecting C compile features
+[0.171s] -- Detecting C compile features - done
+[0.173s] -- Detecting CXX compiler ABI info
+[0.236s] -- Detecting CXX compiler ABI info - done
+[0.243s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.243s] -- Detecting CXX compile features
+[0.244s] -- Detecting CXX compile features - done
+[0.248s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.248s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.248s]   has asked CMake to find a package configuration file provided by
+[0.248s]   "ament_cmake", but CMake did not find one.
+[0.248s] 
+[0.248s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.248s]   any of the following names:
+[0.248s] 
+[0.248s]     ament_cmakeConfig.cmake
+[0.249s]     ament_cmake-config.cmake
+[0.249s] 
+[0.249s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.249s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.249s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.249s]   has been installed.
+[0.249s] 
+[0.249s] [0m
+[0.249s] -- Configuring incomplete, errors occurred!
+[0.249s] See also "/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener/CMakeFiles/CMakeOutput.log".
+[0.251s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener' returned '1': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ /usr/bin/cmake /home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener -DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener

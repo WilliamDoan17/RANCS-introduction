@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000099] (talker_listener) JobQueued: {'identifier': 'talker_listener', 'dependencies': OrderedDict()}
+[0.000123] (talker_listener) JobStarted: {'identifier': 'talker_listener'}
+[0.006173] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'cmake'}
+[0.006462] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener', '-DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will/Will/RANCS/RANCS-introduction/ros2'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049296'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'docker'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('HL_INITIAL_WORKSPACE_TOKEN', '8fd082a6-51bf-4ab7-9242-81711322afb1'), ('PATH', '/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '3062721191839391'), ('COLCON', '1')]), 'shell': False}
+[0.055149] (talker_listener) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099497] (-) TimerEvent: {}
+[0.102191] (talker_listener) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.108804] (talker_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.163509] (talker_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.170150] (talker_listener) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.170387] (talker_listener) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.170745] (talker_listener) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.173375] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199581] (-) TimerEvent: {}
+[0.236233] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.243067] (talker_listener) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.243312] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.243740] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.248005] (talker_listener) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[0.248174] (talker_listener) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.248236] (talker_listener) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.248289] (talker_listener) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.248339] (talker_listener) StderrLine: {'line': b'\n'}
+[0.248388] (talker_listener) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.248438] (talker_listener) StderrLine: {'line': b'  any of the following names:\n'}
+[0.248499] (talker_listener) StderrLine: {'line': b'\n'}
+[0.248549] (talker_listener) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.248598] (talker_listener) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.248647] (talker_listener) StderrLine: {'line': b'\n'}
+[0.248694] (talker_listener) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.248743] (talker_listener) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.248790] (talker_listener) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.248838] (talker_listener) StderrLine: {'line': b'  has been installed.\n'}
+[0.248884] (talker_listener) StderrLine: {'line': b'\n'}
+[0.248931] (talker_listener) StderrLine: {'line': b'\x1b[0m\n'}
+[0.248978] (talker_listener) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.249032] (talker_listener) StdoutLine: {'line': b'See also "/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener/CMakeFiles/CMakeOutput.log".\n'}
+[0.250719] (talker_listener) CommandEnded: {'returncode': 1}
+[0.267927] (talker_listener) JobEnded: {'identifier': 'talker_listener', 'rc': 1}
+[0.278428] (-) EventReactorShutdown: {}

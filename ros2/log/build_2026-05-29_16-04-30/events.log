@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.000141] (talker_listener) JobQueued: {'identifier': 'talker_listener', 'dependencies': OrderedDict()}
+[0.000185] (talker_listener) JobStarted: {'identifier': 'talker_listener'}
+[0.007211] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'cmake'}
+[0.007509] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '/ros2/src/talker_listener', '-DCMAKE_INSTALL_PREFIX=/ros2/install/talker_listener'], 'cwd': '/ros2/build/talker_listener', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2/build/talker_listener'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.055059] (talker_listener) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099363] (-) TimerEvent: {}
+[0.101505] (talker_listener) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.108158] (talker_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.169341] (talker_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.176195] (talker_listener) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.176446] (talker_listener) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.176777] (talker_listener) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.179382] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199485] (-) TimerEvent: {}
+[0.247544] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.254948] (talker_listener) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.255254] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.255645] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.257953] (talker_listener) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299631] (-) TimerEvent: {}
+[0.369241] (talker_listener) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.399744] (-) TimerEvent: {}
+[0.447337] (talker_listener) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.476516] (talker_listener) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.480336] (talker_listener) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.487261] (talker_listener) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.497393] (talker_listener) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.499851] (-) TimerEvent: {}
+[0.511750] (talker_listener) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.548292] (talker_listener) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.550329] (talker_listener) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.599919] (-) TimerEvent: {}
+[0.617462] (talker_listener) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.630593] (talker_listener) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.652864] (talker_listener) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.659084] (talker_listener) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700009] (-) TimerEvent: {}
+[0.720796] (talker_listener) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.721324] (talker_listener) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.795652] (talker_listener) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.797034] (talker_listener) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800109] (-) TimerEvent: {}
+[0.851168] (talker_listener) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.900226] (-) TimerEvent: {}
+[0.916471] (talker_listener) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.916598] (talker_listener) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.916658] (talker_listener) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.917101] (talker_listener) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.917891] (talker_listener) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.917981] (talker_listener) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.918261] (talker_listener) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.919746] (talker_listener) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.928713] (talker_listener) StdoutLine: {'line': b'-- Generating done\n'}
+[0.931866] (talker_listener) StdoutLine: {'line': b'-- Build files have been written to: /ros2/build/talker_listener\n'}
+[0.937808] (talker_listener) CommandEnded: {'returncode': 0}
+[0.938278] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'build'}
+[0.939581] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2/build/talker_listener', '--', '-j12', '-l12'], 'cwd': '/ros2/build/talker_listener', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2/build/talker_listener'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.971548] (talker_listener) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talker\x1b[0m\n'}
+[0.990298] (talker_listener) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o\x1b[0m\n'}
+[1.000348] (-) TimerEvent: {}
+[1.100622] (-) TimerEvent: {}
+[1.201001] (-) TimerEvent: {}
+[1.301255] (-) TimerEvent: {}
+[1.401544] (-) TimerEvent: {}
+[1.501805] (-) TimerEvent: {}
+[1.602124] (-) TimerEvent: {}
+[1.702383] (-) TimerEvent: {}
+[1.802645] (-) TimerEvent: {}
+[1.902946] (-) TimerEvent: {}
+[2.003277] (-) TimerEvent: {}
+[2.103578] (-) TimerEvent: {}
+[2.203844] (-) TimerEvent: {}
+[2.304067] (-) TimerEvent: {}
+[2.404326] (-) TimerEvent: {}
+[2.504585] (-) TimerEvent: {}
+[2.604853] (-) TimerEvent: {}
+[2.705122] (-) TimerEvent: {}
+[2.805398] (-) TimerEvent: {}
+[2.905659] (-) TimerEvent: {}
+[3.005937] (-) TimerEvent: {}
+[3.106218] (-) TimerEvent: {}
+[3.206487] (-) TimerEvent: {}
+[3.306747] (-) TimerEvent: {}
+[3.407034] (-) TimerEvent: {}
+[3.507304] (-) TimerEvent: {}
+[3.607566] (-) TimerEvent: {}
+[3.707872] (-) TimerEvent: {}
+[3.808133] (-) TimerEvent: {}
+[3.908401] (-) TimerEvent: {}
+[4.008651] (-) TimerEvent: {}
+[4.108913] (-) TimerEvent: {}
+[4.209167] (-) TimerEvent: {}
+[4.309418] (-) TimerEvent: {}
+[4.409685] (-) TimerEvent: {}
+[4.509965] (-) TimerEvent: {}
+[4.610212] (-) TimerEvent: {}
+[4.615275] (talker_listener) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[4.710335] (-) TimerEvent: {}
+[4.781048] (talker_listener) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[4.792467] (talker_listener) CommandEnded: {'returncode': 0}
+[4.793557] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'install'}
+[4.804418] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2/build/talker_listener'], 'cwd': '/ros2/build/talker_listener', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2/build/talker_listener'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.810447] (-) TimerEvent: {}
+[4.811795] (talker_listener) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.812863] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/lib/talker_listener/talker\n'}
+[4.814065] (talker_listener) StdoutLine: {'line': b'-- Set runtime path of "/ros2/install/talker_listener/lib/talker_listener/talker" to ""\n'}
+[4.814164] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/ament_index/resource_index/package_run_dependencies/talker_listener\n'}
+[4.814229] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/ament_index/resource_index/parent_prefix_path/talker_listener\n'}
+[4.814394] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/environment/ament_prefix_path.sh\n'}
+[4.814479] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/share/talker_listener/environment/ament_prefix_path.dsv\n'}
+[4.814618] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/environment/path.sh\n'}
+[4.814769] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/share/talker_listener/environment/path.dsv\n'}
+[4.814954] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/local_setup.bash\n'}
+[4.815012] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/share/talker_listener/local_setup.sh\n'}
+[4.815064] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/local_setup.zsh\n'}
+[4.815118] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/share/talker_listener/local_setup.dsv\n'}
+[4.815217] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/share/talker_listener/package.dsv\n'}
+[4.815309] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/ament_index/resource_index/packages/talker_listener\n'}
+[4.815392] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/cmake/talker_listenerConfig.cmake\n'}
+[4.815481] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/cmake/talker_listenerConfig-version.cmake\n'}
+[4.815535] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/package.xml\n'}
+[4.816961] (talker_listener) CommandEnded: {'returncode': 0}
+[4.835069] (talker_listener) JobEnded: {'identifier': 'talker_listener', 'rc': 0}
+[4.836048] (-) EventReactorShutdown: {}
