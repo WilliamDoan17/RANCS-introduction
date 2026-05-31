@@ -1,0 +1,17 @@
+/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher
+/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber
+/ros2/install/vehicle_status/share/ament_index/resource_index/package_run_dependencies/vehicle_status
+/ros2/install/vehicle_status/share/ament_index/resource_index/parent_prefix_path/vehicle_status
+/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.sh
+/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.dsv
+/ros2/install/vehicle_status/share/vehicle_status/environment/path.sh
+/ros2/install/vehicle_status/share/vehicle_status/environment/path.dsv
+/ros2/install/vehicle_status/share/vehicle_status/local_setup.bash
+/ros2/install/vehicle_status/share/vehicle_status/local_setup.sh
+/ros2/install/vehicle_status/share/vehicle_status/local_setup.zsh
+/ros2/install/vehicle_status/share/vehicle_status/local_setup.dsv
+/ros2/install/vehicle_status/share/vehicle_status/package.dsv
+/ros2/install/vehicle_status/share/ament_index/resource_index/packages/vehicle_status
+/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig.cmake
+/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig-version.cmake
+/ros2/install/vehicle_status/share/vehicle_status/package.xml
