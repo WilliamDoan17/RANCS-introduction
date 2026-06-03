@@ -1,0 +1,805 @@
+[0.000000] (-) TimerEvent: {}
+[0.000245] (imu) JobQueued: {'identifier': 'imu', 'dependencies': OrderedDict()}
+[0.000272] (imu_py) JobQueued: {'identifier': 'imu_py', 'dependencies': OrderedDict()}
+[0.000290] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000305] (talker_listener) JobQueued: {'identifier': 'talker_listener', 'dependencies': OrderedDict()}
+[0.000319] (talker_listener_py) JobQueued: {'identifier': 'talker_listener_py', 'dependencies': OrderedDict()}
+[0.000334] (vehicle_status) JobQueued: {'identifier': 'vehicle_status', 'dependencies': OrderedDict([('interfaces', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces')])}
+[0.000363] (vehicle_status_py) JobQueued: {'identifier': 'vehicle_status_py', 'dependencies': OrderedDict([('interfaces', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces')])}
+[0.000806] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.007296] (imu) JobStarted: {'identifier': 'imu'}
+[0.012113] (imu_py) JobStarted: {'identifier': 'imu_py'}
+[0.017394] (talker_listener) JobStarted: {'identifier': 'talker_listener'}
+[0.020400] (talker_listener_py) JobStarted: {'identifier': 'talker_listener_py'}
+[0.027994] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.028348] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/will/Will/RANCS/RANCS-introduction/ros2/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.031903] (imu) JobProgress: {'identifier': 'imu', 'progress': 'cmake'}
+[0.032306] (imu) Command: {'cmd': ['/usr/bin/cmake', '/home/will/Will/RANCS/RANCS-introduction/ros2/src/imu', '-DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098850] (-) TimerEvent: {}
+[0.199107] (-) TimerEvent: {}
+[0.274129] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'cmake'}
+[0.275642] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener', '-DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.279218] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.280723] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.281051] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.281137] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.281199] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.281259] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.281316] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.281374] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.281455] (imu) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.282265] (imu) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.282333] (imu) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.282597] (imu) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.282660] (imu) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.282718] (imu) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.282776] (imu) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.282830] (imu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299219] (-) TimerEvent: {}
+[0.340202] (talker_listener) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.361843] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.362642] (imu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.369744] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.369995] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.370437] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.370602] (imu) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.370782] (imu) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.371181] (imu) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.374646] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.375156] (imu) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399328] (-) TimerEvent: {}
+[0.410450] (talker_listener) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.421877] (talker_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.499458] (-) TimerEvent: {}
+[0.506254] (talker_listener) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.517666] (talker_listener) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.518126] (talker_listener) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.518416] (talker_listener) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.521602] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.545650] (interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.551657] (imu) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.599571] (-) TimerEvent: {}
+[0.641398] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.656651] (talker_listener) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.657537] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.658519] (talker_listener) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.664193] (talker_listener) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.699647] (-) TimerEvent: {}
+[0.700713] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.700977] (imu) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.704386] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.718420] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.766595] (imu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.772616] (imu) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.775086] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.784864] (imu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.799750] (-) TimerEvent: {}
+[0.800591] (imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.824047] (imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.837188] (talker_listener) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.899869] (-) TimerEvent: {}
+[0.913761] (imu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.919879] (imu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.962201] (imu_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_py', 'build', '--build-base', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build', 'install', '--record', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/src/imu_py', 'env': {'MAIL': '/var/spool/mail/will', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'USER': 'will', 'HYPRLAND_INSTANCE_SIGNATURE': '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170', 'STARSHIP_SHELL': 'bash', 'HOSTNAME': 'archlinux', 'XDG_SESSION_TYPE': 'wayland', 'XCURSOR_SIZE': '24', 'XDG_CACHE_HOME': '/home/will/.cache', 'SHLVL': '4', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/will', 'TERMINFO': '/usr/lib/kitty/terminfo', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/home/will', 'DESKTOP_SESSION': 'hyprland', 'NVM_BIN': '/home/will/.nvm/versions/node/v24.14.0/bin', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'NVM_INC': '/home/will/.nvm/versions/node/v24.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'PS1': '[\\u@\\h \\W]\\$', 'KITTY_PID': '1049226', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/will/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'podman', 'NVM_DIR': '/home/will/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'will', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'HL_INITIAL_WORKSPACE_TOKEN': 'f8dfe874-abb7-4575-98aa-e9ca657dedee', 'PATH': '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'HYPRCURSOR_SIZE': '24', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/will/.local/share', 'XDG_CONFIG_HOME': '/home/will/.config', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'Hyprland', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'KITTY_WINDOW_ID': '1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py', 'CONTAINER_ID': 'ros2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_BACKEND': 'wayland', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '1450075025004259', 'PYTHONPATH': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.974390] (talker_listener_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/talker_listener_py', 'build', '--build-base', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build', 'install', '--record', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener_py', 'env': {'MAIL': '/var/spool/mail/will', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'USER': 'will', 'HYPRLAND_INSTANCE_SIGNATURE': '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170', 'STARSHIP_SHELL': 'bash', 'HOSTNAME': 'archlinux', 'XDG_SESSION_TYPE': 'wayland', 'XCURSOR_SIZE': '24', 'XDG_CACHE_HOME': '/home/will/.cache', 'SHLVL': '4', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/will', 'TERMINFO': '/usr/lib/kitty/terminfo', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/home/will', 'DESKTOP_SESSION': 'hyprland', 'NVM_BIN': '/home/will/.nvm/versions/node/v24.14.0/bin', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'NVM_INC': '/home/will/.nvm/versions/node/v24.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'PS1': '[\\u@\\h \\W]\\$', 'KITTY_PID': '1049226', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/will/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'podman', 'NVM_DIR': '/home/will/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'will', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'HL_INITIAL_WORKSPACE_TOKEN': 'f8dfe874-abb7-4575-98aa-e9ca657dedee', 'PATH': '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'HYPRCURSOR_SIZE': '24', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/will/.local/share', 'XDG_CONFIG_HOME': '/home/will/.config', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'Hyprland', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'KITTY_WINDOW_ID': '1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py', 'CONTAINER_ID': 'ros2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_BACKEND': 'wayland', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '1450075025004259', 'PYTHONPATH': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.988372] (talker_listener) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.999966] (-) TimerEvent: {}
+[1.058571] (talker_listener) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.067056] (imu) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.067824] (talker_listener) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.087993] (talker_listener) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.100068] (-) TimerEvent: {}
+[1.104185] (imu) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.111206] (talker_listener) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.132900] (talker_listener) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.148628] (imu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.156473] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.163679] (imu) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.189519] (talker_listener) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.193610] (talker_listener) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.200193] (-) TimerEvent: {}
+[1.217877] (imu_py) StdoutLine: {'line': b'running egg_info\n'}
+[1.218728] (imu_py) StdoutLine: {'line': b'creating ../../build/imu_py/imu_py.egg-info\n'}
+[1.218949] (imu_py) StdoutLine: {'line': b'writing ../../build/imu_py/imu_py.egg-info/PKG-INFO\n'}
+[1.219132] (imu_py) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_py/imu_py.egg-info/dependency_links.txt\n'}
+[1.219288] (imu_py) StdoutLine: {'line': b'writing entry points to ../../build/imu_py/imu_py.egg-info/entry_points.txt\n'}
+[1.219484] (imu_py) StdoutLine: {'line': b'writing requirements to ../../build/imu_py/imu_py.egg-info/requires.txt\n'}
+[1.219617] (imu_py) StdoutLine: {'line': b'writing top-level names to ../../build/imu_py/imu_py.egg-info/top_level.txt\n'}
+[1.219778] (imu_py) StdoutLine: {'line': b"writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'\n"}
+[1.221484] (imu_py) StdoutLine: {'line': b"reading manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'\n"}
+[1.222684] (imu_py) StdoutLine: {'line': b"writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'\n"}
+[1.223246] (imu_py) StdoutLine: {'line': b'running build\n'}
+[1.223519] (imu_py) StdoutLine: {'line': b'running build_py\n'}
+[1.223856] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build\n'}
+[1.224048] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib\n'}
+[1.224256] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py\n'}
+[1.224381] (imu_py) StdoutLine: {'line': b'copying imu_py/imu_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py\n'}
+[1.224514] (imu_py) StdoutLine: {'line': b'copying imu_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py\n'}
+[1.224642] (imu_py) StdoutLine: {'line': b'copying imu_py/imu_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py\n'}
+[1.224841] (imu_py) StdoutLine: {'line': b'running install\n'}
+[1.225654] (imu_py) StdoutLine: {'line': b'running install_lib\n'}
+[1.226661] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py\n'}
+[1.226970] (imu_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/imu_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py\n'}
+[1.227143] (imu_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py\n'}
+[1.227255] (imu_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/imu_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py\n'}
+[1.228254] (imu_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_publisher.py to imu_publisher.cpython-310.pyc\n'}
+[1.228817] (imu_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/__init__.py to __init__.cpython-310.pyc\n'}
+[1.229082] (imu_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_subscriber.py to imu_subscriber.cpython-310.pyc\n'}
+[1.229372] (imu_py) StdoutLine: {'line': b'running install_data\n'}
+[1.229689] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index\n'}
+[1.229920] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index\n'}
+[1.230059] (imu_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index/packages\n'}
+[1.230174] (imu_py) StdoutLine: {'line': b'copying resource/imu_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index/packages\n'}
+[1.230292] (imu_py) StdoutLine: {'line': b'copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/imu_py\n'}
+[1.230397] (imu_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.234028] (imu_py) StdoutLine: {'line': b'Copying ../../build/imu_py/imu_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py-0.0.0-py3.10.egg-info\n'}
+[1.235016] (imu_py) StdoutLine: {'line': b'running install_scripts\n'}
+[1.247274] (talker_listener_py) StdoutLine: {'line': b'running egg_info\n'}
+[1.248365] (talker_listener_py) StdoutLine: {'line': b'creating ../../build/talker_listener_py/talker_listener_py.egg-info\n'}
+[1.248589] (talker_listener_py) StdoutLine: {'line': b'writing ../../build/talker_listener_py/talker_listener_py.egg-info/PKG-INFO\n'}
+[1.248826] (talker_listener_py) StdoutLine: {'line': b'writing dependency_links to ../../build/talker_listener_py/talker_listener_py.egg-info/dependency_links.txt\n'}
+[1.248993] (talker_listener_py) StdoutLine: {'line': b'writing entry points to ../../build/talker_listener_py/talker_listener_py.egg-info/entry_points.txt\n'}
+[1.249151] (talker_listener_py) StdoutLine: {'line': b'writing requirements to ../../build/talker_listener_py/talker_listener_py.egg-info/requires.txt\n'}
+[1.249223] (talker_listener_py) StdoutLine: {'line': b'writing top-level names to ../../build/talker_listener_py/talker_listener_py.egg-info/top_level.txt\n'}
+[1.249345] (talker_listener_py) StdoutLine: {'line': b"writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'\n"}
+[1.251259] (talker_listener_py) StdoutLine: {'line': b"reading manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'\n"}
+[1.252268] (talker_listener_py) StdoutLine: {'line': b"writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'\n"}
+[1.252509] (talker_listener_py) StdoutLine: {'line': b'running build\n'}
+[1.252671] (talker_listener_py) StdoutLine: {'line': b'running build_py\n'}
+[1.252876] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build\n'}
+[1.253000] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib\n'}
+[1.253121] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py\n'}
+[1.253244] (talker_listener_py) StdoutLine: {'line': b'copying talker_listener_py/talker.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py\n'}
+[1.253424] (talker_listener_py) StdoutLine: {'line': b'copying talker_listener_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py\n'}
+[1.253609] (talker_listener_py) StdoutLine: {'line': b'copying talker_listener_py/listener.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py\n'}
+[1.253738] (talker_listener_py) StdoutLine: {'line': b'running install\n'}
+[1.253991] (talker_listener_py) StdoutLine: {'line': b'running install_lib\n'}
+[1.255081] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py\n'}
+[1.255329] (talker_listener_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/talker.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py\n'}
+[1.255552] (talker_listener_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py\n'}
+[1.255829] (talker_listener_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/listener.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py\n'}
+[1.257398] (talker_listener_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/talker.py to talker.cpython-310.pyc\n'}
+[1.258382] (talker_listener_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/__init__.py to __init__.cpython-310.pyc\n'}
+[1.258916] (talker_listener_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/listener.py to listener.cpython-310.pyc\n'}
+[1.259518] (talker_listener_py) StdoutLine: {'line': b'running install_data\n'}
+[1.259945] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index\n'}
+[1.260132] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index\n'}
+[1.260320] (talker_listener_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index/packages\n'}
+[1.260432] (talker_listener_py) StdoutLine: {'line': b'copying resource/talker_listener_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index/packages\n'}
+[1.260539] (talker_listener_py) StdoutLine: {'line': b'copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/talker_listener_py\n'}
+[1.260645] (talker_listener_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.263670] (talker_listener_py) StdoutLine: {'line': b'Copying ../../build/talker_listener_py/talker_listener_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info\n'}
+[1.265253] (talker_listener_py) StdoutLine: {'line': b'running install_scripts\n'}
+[1.265498] (imu) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.265908] (imu) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.266571] (imu_py) StdoutLine: {'line': b'Installing imu_publisher script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/imu_py\n'}
+[1.266776] (imu_py) StdoutLine: {'line': b'Installing imu_subscriber script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/imu_py\n'}
+[1.267053] (imu_py) StdoutLine: {'line': b"writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/install.log'\n"}
+[1.300334] (-) TimerEvent: {}
+[1.301669] (talker_listener_py) StdoutLine: {'line': b'Installing listener script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py\n'}
+[1.301965] (talker_listener_py) StdoutLine: {'line': b'Installing talker script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py\n'}
+[1.302165] (talker_listener_py) StdoutLine: {'line': b"writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log'\n"}
+[1.321183] (talker_listener) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.333220] (imu_py) CommandEnded: {'returncode': 0}
+[1.350791] (imu_py) JobEnded: {'identifier': 'imu_py', 'rc': 0}
+[1.356867] (talker_listener) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.371778] (talker_listener_py) CommandEnded: {'returncode': 0}
+[1.372764] (imu) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.375698] (imu) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.382457] (talker_listener_py) JobEnded: {'identifier': 'talker_listener_py', 'rc': 0}
+[1.400443] (-) TimerEvent: {}
+[1.402852] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.404410] (talker_listener) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.416170] (talker_listener) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.466465] (imu) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.499976] (talker_listener) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.500477] (talker_listener) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.500613] (-) TimerEvent: {}
+[1.517358] (imu) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.582627] (talker_listener) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.583743] (talker_listener) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.600821] (-) TimerEvent: {}
+[1.624448] (imu) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.624804] (imu) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.624986] (imu) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.626355] (imu) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.628508] (imu) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.628748] (imu) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.630102] (imu) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.632656] (imu) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.653724] (imu) StdoutLine: {'line': b'-- Generating done\n'}
+[1.660779] (imu) StdoutLine: {'line': b'-- Build files have been written to: /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu\n'}
+[1.661036] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.669354] (imu) CommandEnded: {'returncode': 0}
+[1.670134] (imu) JobProgress: {'identifier': 'imu', 'progress': 'build'}
+[1.671443] (imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu', '--', '-j12', '-l12'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.679920] (talker_listener) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.681999] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.684203] (interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.700914] (-) TimerEvent: {}
+[1.706294] (interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.707107] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.707444] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.707636] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.729863] (imu) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/imu_subscriber.dir/src/imu_subscriber.cpp.o\x1b[0m\n'}
+[1.730576] (imu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o\x1b[0m\n'}
+[1.730783] (interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.787352] (talker_listener) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.787623] (talker_listener) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.787712] (talker_listener) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.788850] (talker_listener) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.791486] (talker_listener) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.792054] (talker_listener) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.792925] (talker_listener) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.795488] (talker_listener) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.801046] (-) TimerEvent: {}
+[1.820302] (talker_listener) StdoutLine: {'line': b'-- Generating done\n'}
+[1.822082] (interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.826167] (talker_listener) StdoutLine: {'line': b'-- Build files have been written to: /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener\n'}
+[1.836233] (talker_listener) CommandEnded: {'returncode': 0}
+[1.837070] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'build'}
+[1.837633] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener', '--', '-j12', '-l12'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.849243] (interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.850370] (interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.853001] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.888479] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.895883] (talker_listener) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o\x1b[0m\n'}
+[1.896159] (talker_listener) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o\x1b[0m\n'}
+[1.901192] (-) TimerEvent: {}
+[1.903957] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces\n'}
+[1.919555] (interfaces) CommandEnded: {'returncode': 0}
+[1.920129] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[1.920685] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces', '--', '-j12', '-l12'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.965918] (interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.978786] (interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.985235] (interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[1.988166] (interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_interfaces\n'}
+[2.001291] (-) TimerEvent: {}
+[2.101624] (-) TimerEvent: {}
+[2.201973] (-) TimerEvent: {}
+[2.302285] (-) TimerEvent: {}
+[2.369360] (interfaces) StdoutLine: {'line': b'[  9%] Built target interfaces__cpp\n'}
+[2.389069] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.393729] (interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.395117] (interfaces) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.402467] (-) TimerEvent: {}
+[2.416824] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.418340] (interfaces) StdoutLine: {'line': b'creating interfaces.egg-info\n'}
+[2.419168] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[2.419791] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[2.420346] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[2.420937] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[2.427444] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[2.429928] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[2.502604] (-) TimerEvent: {}
+[2.559884] (interfaces) StdoutLine: {'line': b'[ 18%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[2.602782] (-) TimerEvent: {}
+[2.638525] (interfaces) StdoutLine: {'line': b'[ 18%] Built target interfaces__rs\n'}
+[2.678766] (interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/vehicle_status__functions.c.o\x1b[0m\n'}
+[2.702897] (-) TimerEvent: {}
+[2.754430] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.803007] (-) TimerEvent: {}
+[2.826622] (interfaces) StdoutLine: {'line': b'[ 25%] Built target interfaces__rosidl_generator_c\n'}
+[2.845692] (interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.848080] (interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.850212] (interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.903124] (-) TimerEvent: {}
+[3.003606] (-) TimerEvent: {}
+[3.069589] (interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/vehicle_status__type_support.cpp.o\x1b[0m\n'}
+[3.071255] (interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/vehicle_status__type_support.cpp.o\x1b[0m\n'}
+[3.103693] (-) TimerEvent: {}
+[3.126642] (interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/vehicle_status__type_support.cpp.o\x1b[0m\n'}
+[3.204516] (-) TimerEvent: {}
+[3.305158] (-) TimerEvent: {}
+[3.407025] (-) TimerEvent: {}
+[3.477069] (interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/vehicle_status__type_support.cpp.o\x1b[0m\n'}
+[3.507349] (-) TimerEvent: {}
+[3.556306] (interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.603504] (interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/vehicle_status__type_support.c.o\x1b[0m\n'}
+[3.607784] (-) TimerEvent: {}
+[3.619698] (interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/vehicle_status__type_support_c.cpp.o\x1b[0m\n'}
+[3.656606] (interfaces) StdoutLine: {'line': b'[ 56%] Built target interfaces__rosidl_typesupport_c\n'}
+[3.686961] (interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.707918] (-) TimerEvent: {}
+[3.757072] (interfaces) StdoutLine: {'line': b'[ 59%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[3.763975] (interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.808161] (-) TimerEvent: {}
+[3.833539] (interfaces) StdoutLine: {'line': b'[ 62%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[3.908811] (-) TimerEvent: {}
+[3.951093] (interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.985783] (interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.009103] (-) TimerEvent: {}
+[4.066890] (interfaces) StdoutLine: {'line': b'[ 68%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.109269] (-) TimerEvent: {}
+[4.118160] (interfaces) StdoutLine: {'line': b'[ 68%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.209370] (-) TimerEvent: {}
+[4.272460] (interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.309571] (-) TimerEvent: {}
+[4.410146] (-) TimerEvent: {}
+[4.415276] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.444849] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces\n'}
+[4.478167] (interfaces) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.510516] (-) TimerEvent: {}
+[4.611209] (-) TimerEvent: {}
+[4.711595] (-) TimerEvent: {}
+[4.811993] (-) TimerEvent: {}
+[4.912746] (-) TimerEvent: {}
+[4.950854] (interfaces) StdoutLine: {'line': b'[ 75%] Built target interfaces__py\n'}
+[4.976914] (interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_vehicle_status_s.c.o\x1b[0m\n'}
+[5.012921] (-) TimerEvent: {}
+[5.113667] (-) TimerEvent: {}
+[5.117881] (interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.176160] (interfaces) StdoutLine: {'line': b'[ 81%] Built target interfaces__rosidl_generator_py\n'}
+[5.202388] (interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.202671] (interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.214037] (-) TimerEvent: {}
+[5.218729] (interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.314131] (-) TimerEvent: {}
+[5.388738] (interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.409865] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.410237] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.414309] (-) TimerEvent: {}
+[5.452918] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.470811] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[5.471043] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.486108] (interfaces) CommandEnded: {'returncode': 0}
+[5.487113] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[5.499907] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.510997] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.511339] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[5.511530] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces\n'}
+[5.511675] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.511848] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.511965] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__functions.h\n'}
+[5.512078] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.h\n'}
+[5.512165] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__functions.c\n'}
+[5.512317] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__struct.h\n'}
+[5.512424] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.512576] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/vehicle_status.h\n'}
+[5.512804] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[5.513266] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[5.513669] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[5.514282] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""\n'}
+[5.514424] (-) TimerEvent: {}
+[5.514676] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces\n'}
+[5.514844] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.515017] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.515124] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_c.h\n'}
+[5.515238] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.515379] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.515504] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.515664] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces\n'}
+[5.515860] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.515979] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.516096] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.c\n'}
+[5.516240] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_introspection_c.h\n'}
+[5.516339] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.516484] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.516581] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.516697] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[5.517002] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.517144] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces\n'}
+[5.517283] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.517472] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.517600] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__traits.hpp\n'}
+[5.517717] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.hpp\n'}
+[5.517872] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__builder.hpp\n'}
+[5.518036] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__struct.hpp\n'}
+[5.518223] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.518396] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/vehicle_status.hpp\n'}
+[5.518525] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces\n'}
+[5.518665] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.518794] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.518897] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.519000] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps\n'}
+[5.519102] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.519268] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.519382] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.519562] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces\n'}
+[5.519705] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.519816] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.519950] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.520111] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.cpp\n'}
+[5.520234] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.520482] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.520609] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[5.521050] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.521223] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[5.521365] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[5.521586] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[5.521790] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.521949] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.522101] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.522235] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.522379] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[5.522539] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.522719] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.522917] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[5.523102] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg\n'}
+[5.523275] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_vehicle_status_s.c\n'}
+[5.523504] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py\n'}
+[5.523692] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_vehicle_status.py\n'}
+[5.523851] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.524093] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.524280] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.524526] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.524688] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[5.574413] (interfaces) StdoutLine: {'line': b"Listing '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[5.574787] (interfaces) StdoutLine: {'line': b"Compiling '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...\n"}
+[5.574993] (interfaces) StdoutLine: {'line': b"Listing '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg'...\n"}
+[5.575124] (interfaces) StdoutLine: {'line': b"Compiling '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py'...\n"}
+[5.575236] (interfaces) StdoutLine: {'line': b"Compiling '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_vehicle_status.py'...\n"}
+[5.585931] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.586465] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.586803] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.587351] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.587702] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.588269] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.588424] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[5.589030] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""\n'}
+[5.589339] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/ament_index/resource_index/rust_packages/interfaces\n'}
+[5.589615] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust\n'}
+[5.589899] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/Cargo.toml\n'}
+[5.590106] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/src\n'}
+[5.590218] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/src/lib.rs\n'}
+[5.590368] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/src/msg\n'}
+[5.590517] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/src/msg/rmw.rs\n'}
+[5.590696] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/src/msg.rs\n'}
+[5.590952] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/rust/build.rs\n'}
+[5.591291] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/msg/VehicleStatus.idl\n'}
+[5.591556] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/msg/VehicleStatus.msg\n'}
+[5.591937] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[5.592263] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[5.592569] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[5.592759] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[5.592962] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/path.sh\n'}
+[5.593142] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[5.593301] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/local_setup.bash\n'}
+[5.593539] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/local_setup.sh\n'}
+[5.593728] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[5.593892] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[5.594098] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/package.dsv\n'}
+[5.594697] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[5.594933] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.595131] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.595344] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.595592] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.595810] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.596057] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.596270] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.596593] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.596928] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.597230] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.597676] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.597823] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.598052] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.598220] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.598373] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.598657] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.598882] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.599086] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.599283] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.599470] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.599688] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.599871] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.600058] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.600251] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.600496] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[5.600627] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[5.600818] (interfaces) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/package.xml\n'}
+[5.604957] (interfaces) CommandEnded: {'returncode': 0}
+[5.614579] (-) TimerEvent: {}
+[5.642963] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[5.645681] (vehicle_status) JobStarted: {'identifier': 'vehicle_status'}
+[5.649044] (vehicle_status_py) JobStarted: {'identifier': 'vehicle_status_py'}
+[5.662301] (vehicle_status) JobProgress: {'identifier': 'vehicle_status', 'progress': 'cmake'}
+[5.663594] (vehicle_status) Command: {'cmd': ['/usr/bin/cmake', '/home/will/Will/RANCS/RANCS-introduction/ros2/src/vehicle_status', '-DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[5.714664] (-) TimerEvent: {}
+[5.775493] (vehicle_status) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.814943] (-) TimerEvent: {}
+[5.888723] (vehicle_status) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.903756] (vehicle_status) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.915032] (-) TimerEvent: {}
+[6.015432] (-) TimerEvent: {}
+[6.016171] (vehicle_status) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.028074] (vehicle_status) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.028545] (vehicle_status) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.029068] (vehicle_status) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.034253] (vehicle_status) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.115742] (-) TimerEvent: {}
+[6.169275] (vehicle_status) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.187926] (vehicle_status) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.188338] (vehicle_status) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.189524] (vehicle_status) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.196584] (vehicle_status) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.215852] (-) TimerEvent: {}
+[6.316444] (-) TimerEvent: {}
+[6.416784] (-) TimerEvent: {}
+[6.436025] (vehicle_status) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.516923] (-) TimerEvent: {}
+[6.566845] (vehicle_status_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/vehicle_status_py', 'build', '--build-base', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build', 'install', '--record', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/src/vehicle_status_py', 'env': {'MAIL': '/var/spool/mail/will', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'USER': 'will', 'HYPRLAND_INSTANCE_SIGNATURE': '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170', 'STARSHIP_SHELL': 'bash', 'HOSTNAME': 'archlinux', 'XDG_SESSION_TYPE': 'wayland', 'XCURSOR_SIZE': '24', 'XDG_CACHE_HOME': '/home/will/.cache', 'SHLVL': '4', 'LD_LIBRARY_PATH': '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/will', 'TERMINFO': '/usr/lib/kitty/terminfo', 'MOZ_ENABLE_WAYLAND': '1', 'OLDPWD': '/home/will', 'DESKTOP_SESSION': 'hyprland', 'NVM_BIN': '/home/will/.nvm/versions/node/v24.14.0/bin', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'NVM_INC': '/home/will/.nvm/versions/node/v24.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'PS1': '[\\u@\\h \\W]\\$', 'KITTY_PID': '1049226', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/will/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'podman', 'NVM_DIR': '/home/will/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'will', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'HL_INITIAL_WORKSPACE_TOKEN': 'f8dfe874-abb7-4575-98aa-e9ca657dedee', 'PATH': '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'HYPRCURSOR_SIZE': '24', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/will/.local/share', 'XDG_CONFIG_HOME': '/home/will/.config', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'Hyprland', 'AMENT_PREFIX_PATH': '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble', 'SHELL': '/usr/bin/bash', 'KITTY_WINDOW_ID': '1', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py', 'CONTAINER_ID': 'ros2', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'XDG_BACKEND': 'wayland', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '1450075025004259', 'PYTHONPATH': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces'}, 'shell': False}
+[6.617027] (-) TimerEvent: {}
+[6.620184] (vehicle_status) StdoutLine: {'line': b'-- Found interfaces: 0.0.0 (/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake)\n'}
+[6.671667] (vehicle_status) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.681856] (vehicle_status) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.699118] (vehicle_status) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.717251] (-) TimerEvent: {}
+[6.733391] (vehicle_status) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.768040] (vehicle_status) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.787300] (vehicle_status) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.817325] (-) TimerEvent: {}
+[6.881182] (vehicle_status) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.885643] (vehicle_status) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.903012] (vehicle_status_py) StdoutLine: {'line': b'running egg_info\n'}
+[6.903784] (vehicle_status_py) StdoutLine: {'line': b'creating ../../build/vehicle_status_py/vehicle_status_py.egg-info\n'}
+[6.904004] (vehicle_status_py) StdoutLine: {'line': b'writing ../../build/vehicle_status_py/vehicle_status_py.egg-info/PKG-INFO\n'}
+[6.904184] (vehicle_status_py) StdoutLine: {'line': b'writing dependency_links to ../../build/vehicle_status_py/vehicle_status_py.egg-info/dependency_links.txt\n'}
+[6.904365] (vehicle_status_py) StdoutLine: {'line': b'writing entry points to ../../build/vehicle_status_py/vehicle_status_py.egg-info/entry_points.txt\n'}
+[6.904550] (vehicle_status_py) StdoutLine: {'line': b'writing requirements to ../../build/vehicle_status_py/vehicle_status_py.egg-info/requires.txt\n'}
+[6.906194] (vehicle_status_py) StdoutLine: {'line': b'writing top-level names to ../../build/vehicle_status_py/vehicle_status_py.egg-info/top_level.txt\n'}
+[6.907264] (vehicle_status_py) StdoutLine: {'line': b"writing manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'\n"}
+[6.910476] (vehicle_status_py) StdoutLine: {'line': b"reading manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'\n"}
+[6.915025] (vehicle_status_py) StdoutLine: {'line': b"writing manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'\n"}
+[6.915288] (vehicle_status_py) StdoutLine: {'line': b'running build\n'}
+[6.915429] (vehicle_status_py) StdoutLine: {'line': b'running build_py\n'}
+[6.915621] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build\n'}
+[6.915804] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib\n'}
+[6.915933] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py\n'}
+[6.916082] (vehicle_status_py) StdoutLine: {'line': b'copying vehicle_status_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py\n'}
+[6.916196] (vehicle_status_py) StdoutLine: {'line': b'copying vehicle_status_py/vehicle_status_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py\n'}
+[6.916350] (vehicle_status_py) StdoutLine: {'line': b'copying vehicle_status_py/vehicle_status_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py\n'}
+[6.916474] (vehicle_status_py) StdoutLine: {'line': b'running install\n'}
+[6.916646] (vehicle_status_py) StdoutLine: {'line': b'running install_lib\n'}
+[6.917398] (-) TimerEvent: {}
+[6.917677] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py\n'}
+[6.917889] (vehicle_status_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py\n'}
+[6.918071] (vehicle_status_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py/vehicle_status_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py\n'}
+[6.918248] (vehicle_status_py) StdoutLine: {'line': b'copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build/lib/vehicle_status_py/vehicle_status_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py\n'}
+[6.918688] (vehicle_status_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py/__init__.py to __init__.cpython-310.pyc\n'}
+[6.918968] (vehicle_status_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py/vehicle_status_publisher.py to vehicle_status_publisher.cpython-310.pyc\n'}
+[6.919457] (vehicle_status_py) StdoutLine: {'line': b'byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py/vehicle_status_subscriber.py to vehicle_status_subscriber.cpython-310.pyc\n'}
+[6.919787] (vehicle_status_py) StdoutLine: {'line': b'running install_data\n'}
+[6.919982] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/share/ament_index\n'}
+[6.920181] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/share/ament_index/resource_index\n'}
+[6.920319] (vehicle_status_py) StdoutLine: {'line': b'creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/share/ament_index/resource_index/packages\n'}
+[6.920457] (vehicle_status_py) StdoutLine: {'line': b'copying resource/vehicle_status_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/share/ament_index/resource_index/packages\n'}
+[6.920635] (vehicle_status_py) StdoutLine: {'line': b'copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/share/vehicle_status_py\n'}
+[6.920763] (vehicle_status_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.925333] (vehicle_status_py) StdoutLine: {'line': b'Copying ../../build/vehicle_status_py/vehicle_status_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py-0.0.0-py3.10.egg-info\n'}
+[6.927224] (vehicle_status_py) StdoutLine: {'line': b'running install_scripts\n'}
+[6.966724] (vehicle_status_py) StdoutLine: {'line': b'Installing vehicle_status_publisher script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/vehicle_status_py\n'}
+[6.967049] (vehicle_status_py) StdoutLine: {'line': b'Installing vehicle_status_subscriber script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/vehicle_status_py\n'}
+[6.967376] (vehicle_status_py) StdoutLine: {'line': b"writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/install.log'\n"}
+[7.017492] (-) TimerEvent: {}
+[7.033921] (vehicle_status_py) CommandEnded: {'returncode': 0}
+[7.045495] (vehicle_status) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.048536] (vehicle_status_py) JobEnded: {'identifier': 'vehicle_status_py', 'rc': 0}
+[7.083959] (vehicle_status) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.117617] (-) TimerEvent: {}
+[7.139240] (vehicle_status) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.154165] (vehicle_status) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.217745] (-) TimerEvent: {}
+[7.254657] (vehicle_status) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.254933] (vehicle_status) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.317882] (-) TimerEvent: {}
+[7.364204] (vehicle_status) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.365392] (vehicle_status) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.417997] (-) TimerEvent: {}
+[7.447348] (vehicle_status) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.518099] (-) TimerEvent: {}
+[7.574986] (vehicle_status) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.575598] (vehicle_status) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.575847] (vehicle_status) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.576638] (vehicle_status) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.578171] (vehicle_status) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.578446] (vehicle_status) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.579032] (vehicle_status) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.581654] (vehicle_status) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.600794] (vehicle_status) StdoutLine: {'line': b'-- Generating done\n'}
+[7.608148] (vehicle_status) StdoutLine: {'line': b'-- Build files have been written to: /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status\n'}
+[7.618273] (-) TimerEvent: {}
+[7.621351] (vehicle_status) CommandEnded: {'returncode': 0}
+[7.622683] (vehicle_status) JobProgress: {'identifier': 'vehicle_status', 'progress': 'build'}
+[7.625548] (vehicle_status) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status', '--', '-j12', '-l12'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[7.700685] (vehicle_status) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_status_publisher.dir/src/vehicle_status_publisher.cpp.o\x1b[0m\n'}
+[7.700963] (vehicle_status) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vehicle_status_subscriber.dir/src/vehicle_status_subscriber.cpp.o\x1b[0m\n'}
+[7.718466] (-) TimerEvent: {}
+[7.818931] (-) TimerEvent: {}
+[7.919330] (-) TimerEvent: {}
+[8.019795] (-) TimerEvent: {}
+[8.120253] (-) TimerEvent: {}
+[8.220624] (-) TimerEvent: {}
+[8.321024] (-) TimerEvent: {}
+[8.421460] (-) TimerEvent: {}
+[8.521869] (-) TimerEvent: {}
+[8.622339] (-) TimerEvent: {}
+[8.723510] (-) TimerEvent: {}
+[8.824683] (-) TimerEvent: {}
+[8.925705] (-) TimerEvent: {}
+[9.026345] (-) TimerEvent: {}
+[9.127098] (-) TimerEvent: {}
+[9.227863] (-) TimerEvent: {}
+[9.328513] (-) TimerEvent: {}
+[9.331351] (imu) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable imu_publisher\x1b[0m\n'}
+[9.428664] (-) TimerEvent: {}
+[9.529397] (-) TimerEvent: {}
+[9.630386] (-) TimerEvent: {}
+[9.731501] (-) TimerEvent: {}
+[9.832017] (-) TimerEvent: {}
+[9.837472] (imu) StdoutLine: {'line': b'[ 75%] Built target imu_publisher\n'}
+[9.845260] (talker_listener) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[9.932139] (-) TimerEvent: {}
+[10.032640] (-) TimerEvent: {}
+[10.133031] (-) TimerEvent: {}
+[10.178378] (talker_listener) StdoutLine: {'line': b'[ 75%] Built target talker\n'}
+[10.233141] (-) TimerEvent: {}
+[10.333479] (-) TimerEvent: {}
+[10.433826] (-) TimerEvent: {}
+[10.534178] (-) TimerEvent: {}
+[10.634559] (-) TimerEvent: {}
+[10.734979] (-) TimerEvent: {}
+[10.835298] (-) TimerEvent: {}
+[10.935598] (-) TimerEvent: {}
+[11.035917] (-) TimerEvent: {}
+[11.136249] (-) TimerEvent: {}
+[11.236597] (-) TimerEvent: {}
+[11.336912] (-) TimerEvent: {}
+[11.437216] (-) TimerEvent: {}
+[11.537502] (-) TimerEvent: {}
+[11.637799] (-) TimerEvent: {}
+[11.738123] (-) TimerEvent: {}
+[11.838474] (-) TimerEvent: {}
+[11.938845] (-) TimerEvent: {}
+[12.039329] (-) TimerEvent: {}
+[12.139983] (-) TimerEvent: {}
+[12.240862] (-) TimerEvent: {}
+[12.341474] (-) TimerEvent: {}
+[12.442051] (-) TimerEvent: {}
+[12.542578] (-) TimerEvent: {}
+[12.643023] (-) TimerEvent: {}
+[12.743478] (-) TimerEvent: {}
+[12.843908] (-) TimerEvent: {}
+[12.944570] (-) TimerEvent: {}
+[13.044931] (-) TimerEvent: {}
+[13.145340] (-) TimerEvent: {}
+[13.245847] (-) TimerEvent: {}
+[13.346591] (-) TimerEvent: {}
+[13.447426] (-) TimerEvent: {}
+[13.547755] (-) TimerEvent: {}
+[13.648114] (-) TimerEvent: {}
+[13.748448] (-) TimerEvent: {}
+[13.848754] (-) TimerEvent: {}
+[13.949211] (-) TimerEvent: {}
+[14.049575] (-) TimerEvent: {}
+[14.087820] (vehicle_status) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable vehicle_status_publisher\x1b[0m\n'}
+[14.149974] (-) TimerEvent: {}
+[14.250488] (-) TimerEvent: {}
+[14.350876] (-) TimerEvent: {}
+[14.403740] (vehicle_status) StdoutLine: {'line': b'[ 75%] Built target vehicle_status_publisher\n'}
+[14.450988] (-) TimerEvent: {}
+[14.551313] (-) TimerEvent: {}
+[14.651697] (-) TimerEvent: {}
+[14.751994] (-) TimerEvent: {}
+[14.820861] (imu) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable imu_subscriber\x1b[0m\n'}
+[14.852100] (-) TimerEvent: {}
+[14.952435] (-) TimerEvent: {}
+[15.052809] (-) TimerEvent: {}
+[15.153139] (-) TimerEvent: {}
+[15.215745] (talker_listener) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[15.253241] (-) TimerEvent: {}
+[15.353577] (-) TimerEvent: {}
+[15.454097] (-) TimerEvent: {}
+[15.454396] (imu) StdoutLine: {'line': b'[100%] Built target imu_subscriber\n'}
+[15.471944] (imu) CommandEnded: {'returncode': 0}
+[15.473351] (imu) JobProgress: {'identifier': 'imu', 'progress': 'install'}
+[15.476195] (imu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.485739] (imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.486001] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_publisher\n'}
+[15.486856] (imu) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_publisher" to ""\n'}
+[15.486946] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_subscriber\n'}
+[15.490120] (imu) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_subscriber" to ""\n'}
+[15.490625] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/ament_index/resource_index/package_run_dependencies/imu\n'}
+[15.490956] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/ament_index/resource_index/parent_prefix_path/imu\n'}
+[15.491158] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/ament_prefix_path.sh\n'}
+[15.491294] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/ament_prefix_path.dsv\n'}
+[15.491444] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/path.sh\n'}
+[15.491697] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/path.dsv\n'}
+[15.491865] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.bash\n'}
+[15.491969] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.sh\n'}
+[15.492123] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.zsh\n'}
+[15.492310] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.dsv\n'}
+[15.492493] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/package.dsv\n'}
+[15.492645] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/ament_index/resource_index/packages/imu\n'}
+[15.492749] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/cmake/imuConfig.cmake\n'}
+[15.492837] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/cmake/imuConfig-version.cmake\n'}
+[15.492911] (imu) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/package.xml\n'}
+[15.495493] (imu) CommandEnded: {'returncode': 0}
+[15.509689] (imu) JobEnded: {'identifier': 'imu', 'rc': 0}
+[15.554208] (-) TimerEvent: {}
+[15.654511] (-) TimerEvent: {}
+[15.754839] (-) TimerEvent: {}
+[15.760335] (talker_listener) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[15.772106] (talker_listener) CommandEnded: {'returncode': 0}
+[15.772987] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'install'}
+[15.774427] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.782642] (talker_listener) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.782889] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/lib/talker_listener/talker\n'}
+[15.783748] (talker_listener) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/lib/talker_listener/talker" to ""\n'}
+[15.783840] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/lib/talker_listener/listener\n'}
+[15.786265] (talker_listener) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/lib/talker_listener/listener" to ""\n'}
+[15.786399] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/ament_index/resource_index/package_run_dependencies/talker_listener\n'}
+[15.786553] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/ament_index/resource_index/parent_prefix_path/talker_listener\n'}
+[15.786706] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/environment/ament_prefix_path.sh\n'}
+[15.786821] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/environment/ament_prefix_path.dsv\n'}
+[15.786908] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/environment/path.sh\n'}
+[15.787026] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/environment/path.dsv\n'}
+[15.787088] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/local_setup.bash\n'}
+[15.787172] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/local_setup.sh\n'}
+[15.787246] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/local_setup.zsh\n'}
+[15.787338] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/local_setup.dsv\n'}
+[15.787485] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/package.dsv\n'}
+[15.787611] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/ament_index/resource_index/packages/talker_listener\n'}
+[15.787779] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/cmake/talker_listenerConfig.cmake\n'}
+[15.787891] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/cmake/talker_listenerConfig-version.cmake\n'}
+[15.788009] (talker_listener) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener/share/talker_listener/package.xml\n'}
+[15.790530] (talker_listener) CommandEnded: {'returncode': 0}
+[15.803012] (talker_listener) JobEnded: {'identifier': 'talker_listener', 'rc': 0}
+[15.854937] (-) TimerEvent: {}
+[15.955236] (-) TimerEvent: {}
+[16.055542] (-) TimerEvent: {}
+[16.155918] (-) TimerEvent: {}
+[16.256211] (-) TimerEvent: {}
+[16.356592] (-) TimerEvent: {}
+[16.456954] (-) TimerEvent: {}
+[16.557368] (-) TimerEvent: {}
+[16.657729] (-) TimerEvent: {}
+[16.758221] (-) TimerEvent: {}
+[16.858562] (-) TimerEvent: {}
+[16.958873] (-) TimerEvent: {}
+[17.059169] (-) TimerEvent: {}
+[17.159474] (-) TimerEvent: {}
+[17.259781] (-) TimerEvent: {}
+[17.360107] (-) TimerEvent: {}
+[17.460596] (-) TimerEvent: {}
+[17.561061] (-) TimerEvent: {}
+[17.661341] (-) TimerEvent: {}
+[17.761634] (-) TimerEvent: {}
+[17.861911] (-) TimerEvent: {}
+[17.962206] (-) TimerEvent: {}
+[18.062677] (-) TimerEvent: {}
+[18.163213] (-) TimerEvent: {}
+[18.263484] (-) TimerEvent: {}
+[18.363856] (-) TimerEvent: {}
+[18.464231] (-) TimerEvent: {}
+[18.468682] (vehicle_status) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vehicle_status_subscriber\x1b[0m\n'}
+[18.564354] (-) TimerEvent: {}
+[18.664651] (-) TimerEvent: {}
+[18.764903] (-) TimerEvent: {}
+[18.865162] (-) TimerEvent: {}
+[18.869829] (vehicle_status) StdoutLine: {'line': b'[100%] Built target vehicle_status_subscriber\n'}
+[18.882615] (vehicle_status) CommandEnded: {'returncode': 0}
+[18.883605] (vehicle_status) JobProgress: {'identifier': 'vehicle_status', 'progress': 'install'}
+[18.884415] (vehicle_status) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status'], 'cwd': '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status', 'env': OrderedDict([('MAIL', '/var/spool/mail/will'), ('HYPRLAND_CMD', 'Hyprland --watchdog-fd 4'), ('USER', 'will'), ('HYPRLAND_INSTANCE_SIGNATURE', '521ece463c4a9d3d128670688a34756805a4328f_1779540798_1184533170'), ('STARSHIP_SHELL', 'bash'), ('HOSTNAME', 'archlinux'), ('XDG_SESSION_TYPE', 'wayland'), ('XCURSOR_SIZE', '24'), ('XDG_CACHE_HOME', '/home/will/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/will'), ('TERMINFO', '/usr/lib/kitty/terminfo'), ('MOZ_ENABLE_WAYLAND', '1'), ('OLDPWD', '/home/will'), ('DESKTOP_SESSION', 'hyprland'), ('NVM_BIN', '/home/will/.nvm/versions/node/v24.14.0/bin'), ('KITTY_INSTALLATION_DIR', '/usr/lib/kitty'), ('NVM_INC', '/home/will/.nvm/versions/node/v24.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '[\\u@\\h \\W]\\$'), ('KITTY_PID', '1049226'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('XDG_STATE_HOME', '/home/will/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('NVM_DIR', '/home/will/.nvm'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('WAYLAND_DISPLAY', 'wayland-1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'will'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERMINFO_DIRS', '/usr/share/terminfo:/run/host/usr/share/terminfo'), ('TERM', 'xterm-kitty'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('HL_INITIAL_WORKSPACE_TOKEN', 'f8dfe874-abb7-4575-98aa-e9ca657dedee'), ('PATH', '/opt/ros/humble/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.local/bin:/home/will/.opencode/bin:/home/will/.nvm/versions/node/v24.14.0/bin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('HYPRCURSOR_SIZE', '24'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Hyprland'), ('XDG_DATA_HOME', '/home/will/.local/share'), ('XDG_CONFIG_HOME', '/home/will/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'Hyprland'), ('AMENT_PREFIX_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble'), ('SHELL', '/usr/bin/bash'), ('KITTY_WINDOW_ID', '1'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status'), ('CONTAINER_ID', 'ros2'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg'), ('XDG_BACKEND', 'wayland'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/home/will/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('STARSHIP_SESSION_KEY', '1450075025004259'), ('PYTHONPATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble')]), 'shell': False}
+[18.892080] (vehicle_status) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.892334] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher\n'}
+[18.893354] (vehicle_status) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher" to ""\n'}
+[18.893522] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber\n'}
+[18.896836] (vehicle_status) StdoutLine: {'line': b'-- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber" to ""\n'}
+[18.897185] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/package_run_dependencies/vehicle_status\n'}
+[18.897282] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/parent_prefix_path/vehicle_status\n'}
+[18.897642] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.sh\n'}
+[18.897870] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.dsv\n'}
+[18.898028] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/path.sh\n'}
+[18.898195] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/path.dsv\n'}
+[18.898327] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.bash\n'}
+[18.898562] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.sh\n'}
+[18.898688] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.zsh\n'}
+[18.898837] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.dsv\n'}
+[18.898982] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/package.dsv\n'}
+[18.899134] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/packages/vehicle_status\n'}
+[18.899277] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig.cmake\n'}
+[18.899394] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig-version.cmake\n'}
+[18.899584] (vehicle_status) StdoutLine: {'line': b'-- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/package.xml\n'}
+[18.901516] (vehicle_status) CommandEnded: {'returncode': 0}
+[18.918896] (vehicle_status) JobEnded: {'identifier': 'vehicle_status', 'rc': 0}
+[18.919598] (-) EventReactorShutdown: {}

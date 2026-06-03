@@ -1,2 +1,0 @@
-Invoking command in '/ros2/build/talker_listener': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/src/talker_listener -DCMAKE_INSTALL_PREFIX=/ros2/install/talker_listener
-Invoked command in '/ros2/build/talker_listener' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2/src/talker_listener -DCMAKE_INSTALL_PREFIX=/ros2/install/talker_listener

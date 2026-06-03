@@ -1,0 +1,22 @@
+[0.633s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/vehicle_status_py': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_status_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/install.log --single-version-externally-managed install_data
+[0.826s] running egg_info
+[0.826s] writing ../../build/vehicle_status_py/vehicle_status_py.egg-info/PKG-INFO
+[0.827s] writing dependency_links to ../../build/vehicle_status_py/vehicle_status_py.egg-info/dependency_links.txt
+[0.827s] writing entry points to ../../build/vehicle_status_py/vehicle_status_py.egg-info/entry_points.txt
+[0.827s] writing requirements to ../../build/vehicle_status_py/vehicle_status_py.egg-info/requires.txt
+[0.827s] writing top-level names to ../../build/vehicle_status_py/vehicle_status_py.egg-info/top_level.txt
+[0.828s] reading manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'
+[0.829s] writing manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'
+[0.829s] running build
+[0.829s] running build_py
+[0.830s] running install
+[0.830s] running install_lib
+[0.831s] running install_data
+[0.831s] running install_egg_info
+[0.832s] removing '/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py-0.0.0-py3.10.egg-info' (and everything under it)
+[0.833s] Copying ../../build/vehicle_status_py/vehicle_status_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py-0.0.0-py3.10.egg-info
+[0.833s] running install_scripts
+[0.854s] Installing vehicle_status_publisher script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/vehicle_status_py
+[0.854s] Installing vehicle_status_subscriber script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/vehicle_status_py
+[0.854s] writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/install.log'
+[0.881s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/vehicle_status_py' returned '0': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vehicle_status_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status_py/install.log --single-version-externally-managed install_data

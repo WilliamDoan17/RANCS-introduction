@@ -1,0 +1,27 @@
+[0.044s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ /usr/bin/cmake --build /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu -- -j12 -l12
+[0.368s] [ 25%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[0.368s] [ 75%] Built target imu_subscriber
+[4.358s] [100%] [32m[1mLinking CXX executable imu_publisher[0m
+[4.558s] [100%] Built target imu_publisher
+[4.569s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ /usr/bin/cmake --build /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu -- -j12 -l12
+[4.570s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ /usr/bin/cmake --install /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu
+[4.577s] -- Install configuration: ""
+[4.577s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_publisher
+[4.578s] -- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_publisher" to ""
+[4.578s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/lib/imu/imu_subscriber
+[4.578s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/ament_index/resource_index/package_run_dependencies/imu
+[4.578s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/ament_index/resource_index/parent_prefix_path/imu
+[4.578s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/ament_prefix_path.sh
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/ament_prefix_path.dsv
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/path.sh
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/environment/path.dsv
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.bash
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.sh
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.zsh
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/local_setup.dsv
+[4.579s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/package.dsv
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/ament_index/resource_index/packages/imu
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/cmake/imuConfig.cmake
+[4.579s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/cmake/imuConfig-version.cmake
+[4.580s] -- Up-to-date: /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu/share/imu/package.xml
+[4.582s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ /usr/bin/cmake --install /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu

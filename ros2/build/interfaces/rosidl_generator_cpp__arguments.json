@@ -1,9 +1,9 @@
 {
   "package_name": "interfaces",
-  "output_dir": "/ros2/build/interfaces/rosidl_generator_cpp/interfaces",
+  "output_dir": "/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces/rosidl_generator_cpp/interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/ros2/build/interfaces/rosidl_adapter/interfaces:msg/VehicleStatus.idl"
+    "/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces/rosidl_adapter/interfaces:msg/VehicleStatus.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +21,6 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/ros2/build/interfaces/rosidl_adapter/interfaces/msg/VehicleStatus.idl"
+    "/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces/rosidl_adapter/interfaces/msg/VehicleStatus.idl"
   ]
 }

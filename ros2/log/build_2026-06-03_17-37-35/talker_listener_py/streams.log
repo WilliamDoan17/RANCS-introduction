@@ -1,0 +1,41 @@
+[0.957s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener_py': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/talker_listener_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log --single-version-externally-managed install_data
+[1.227s] running egg_info
+[1.228s] creating ../../build/talker_listener_py/talker_listener_py.egg-info
+[1.228s] writing ../../build/talker_listener_py/talker_listener_py.egg-info/PKG-INFO
+[1.228s] writing dependency_links to ../../build/talker_listener_py/talker_listener_py.egg-info/dependency_links.txt
+[1.229s] writing entry points to ../../build/talker_listener_py/talker_listener_py.egg-info/entry_points.txt
+[1.229s] writing requirements to ../../build/talker_listener_py/talker_listener_py.egg-info/requires.txt
+[1.229s] writing top-level names to ../../build/talker_listener_py/talker_listener_py.egg-info/top_level.txt
+[1.229s] writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[1.231s] reading manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[1.232s] writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[1.232s] running build
+[1.232s] running build_py
+[1.232s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build
+[1.233s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib
+[1.233s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+[1.233s] copying talker_listener_py/talker.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+[1.233s] copying talker_listener_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+[1.233s] copying talker_listener_py/listener.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+[1.233s] running install
+[1.234s] running install_lib
+[1.235s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+[1.235s] copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/talker.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+[1.235s] copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+[1.235s] copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/listener.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+[1.237s] byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/talker.py to talker.cpython-310.pyc
+[1.238s] byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/__init__.py to __init__.cpython-310.pyc
+[1.239s] byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/listener.py to listener.cpython-310.pyc
+[1.239s] running install_data
+[1.240s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index
+[1.240s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index
+[1.240s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index/packages
+[1.240s] copying resource/talker_listener_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index/packages
+[1.240s] copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/talker_listener_py
+[1.240s] running install_egg_info
+[1.244s] Copying ../../build/talker_listener_py/talker_listener_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info
+[1.245s] running install_scripts
+[1.281s] Installing listener script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py
+[1.282s] Installing talker script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py
+[1.282s] writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log'
+[1.352s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener_py' returned '0': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/talker_listener_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log --single-version-externally-managed install_data

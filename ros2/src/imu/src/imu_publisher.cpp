@@ -11,6 +11,8 @@ private:
 
   void publish_imu() {
     Imu imu;
+    imu.header.frame_id = "base_link";
+    imu.header.stamp = this->now();
     imu.linear_acceleration.x = 20;
     imu.linear_acceleration.y = 30;
     imu.linear_acceleration.z = 0;

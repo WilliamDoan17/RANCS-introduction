@@ -1,1 +1,0 @@
-Invoking command in '/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --build /ros2/build/imu -- -j12 -l12

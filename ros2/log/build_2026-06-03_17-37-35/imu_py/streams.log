@@ -1,0 +1,41 @@
+[0.953s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/imu_py': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/install.log --single-version-externally-managed install_data
+[1.206s] running egg_info
+[1.207s] creating ../../build/imu_py/imu_py.egg-info
+[1.207s] writing ../../build/imu_py/imu_py.egg-info/PKG-INFO
+[1.207s] writing dependency_links to ../../build/imu_py/imu_py.egg-info/dependency_links.txt
+[1.207s] writing entry points to ../../build/imu_py/imu_py.egg-info/entry_points.txt
+[1.207s] writing requirements to ../../build/imu_py/imu_py.egg-info/requires.txt
+[1.208s] writing top-level names to ../../build/imu_py/imu_py.egg-info/top_level.txt
+[1.208s] writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+[1.209s] reading manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+[1.211s] writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+[1.211s] running build
+[1.212s] running build_py
+[1.212s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build
+[1.212s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib
+[1.212s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+[1.212s] copying imu_py/imu_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+[1.212s] copying imu_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+[1.213s] copying imu_py/imu_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+[1.213s] running install
+[1.214s] running install_lib
+[1.215s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[1.215s] copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/imu_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[1.215s] copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[1.215s] copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/imu_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[1.216s] byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_publisher.py to imu_publisher.cpython-310.pyc
+[1.217s] byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/__init__.py to __init__.cpython-310.pyc
+[1.217s] byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_subscriber.py to imu_subscriber.cpython-310.pyc
+[1.217s] running install_data
+[1.218s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index
+[1.218s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index
+[1.218s] creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index/packages
+[1.218s] copying resource/imu_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index/packages
+[1.218s] copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/imu_py
+[1.218s] running install_egg_info
+[1.222s] Copying ../../build/imu_py/imu_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py-0.0.0-py3.10.egg-info
+[1.223s] running install_scripts
+[1.255s] Installing imu_publisher script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/imu_py
+[1.255s] Installing imu_subscriber script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/imu_py
+[1.255s] writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/install.log'
+[1.321s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/imu_py' returned '0': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/install.log --single-version-externally-managed install_data

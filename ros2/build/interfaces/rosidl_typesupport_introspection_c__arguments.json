@@ -1,9 +1,9 @@
 {
   "package_name": "interfaces",
-  "output_dir": "/ros2/build/interfaces/rosidl_typesupport_introspection_c/interfaces",
+  "output_dir": "/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces/rosidl_typesupport_introspection_c/interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/ros2/build/interfaces/rosidl_adapter/interfaces:msg/VehicleStatus.idl"
+    "/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces/rosidl_adapter/interfaces:msg/VehicleStatus.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
@@ -14,6 +14,6 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/ros2/build/interfaces/rosidl_adapter/interfaces/msg/VehicleStatus.idl"
+    "/home/will/Will/RANCS/RANCS-introduction/ros2/build/interfaces/rosidl_adapter/interfaces/msg/VehicleStatus.idl"
   ]
 }
