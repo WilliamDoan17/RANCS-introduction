@@ -1,0 +1,4 @@
+[console_scripts]
+imu_publisher = imu_py.imu_publisher:main
+imu_subscriber = imu_py.imu_subscriber:main
+

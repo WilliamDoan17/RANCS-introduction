@@ -1,0 +1,74 @@
+[0.023s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/will/Will/RANCS/RANCS-introduction/ros2/src/vehicle_status -DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status
+[0.130s] -- The C compiler identification is GNU 11.4.0
+[0.243s] -- The CXX compiler identification is GNU 11.4.0
+[0.258s] -- Detecting C compiler ABI info
+[0.371s] -- Detecting C compiler ABI info - done
+[0.383s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.383s] -- Detecting C compile features
+[0.383s] -- Detecting C compile features - done
+[0.389s] -- Detecting CXX compiler ABI info
+[0.524s] -- Detecting CXX compiler ABI info - done
+[0.542s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.543s] -- Detecting CXX compile features
+[0.544s] -- Detecting CXX compile features - done
+[0.551s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.790s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.975s] -- Found interfaces: 0.0.0 (/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/share/interfaces/cmake)
+[1.026s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.036s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.054s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.088s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.122s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.142s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[1.236s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.240s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.401s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.438s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.494s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.509s] -- Looking for pthread.h
+[1.609s] -- Looking for pthread.h - found
+[1.609s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.719s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.720s] -- Found Threads: TRUE  
+[1.802s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.930s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.930s] -- Configured cppcheck include dirs: 
+[1.930s] -- Configured cppcheck exclude dirs and/or files: 
+[1.931s] -- Added test 'lint_cmake' to check CMake code style
+[1.933s] -- Added test 'uncrustify' to check C / C++ code style
+[1.933s] -- Configured uncrustify additional arguments: 
+[1.933s] -- Added test 'xmllint' to check XML markup files
+[1.936s] -- Configuring done
+[1.955s] -- Generating done
+[1.963s] -- Build files have been written to: /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status
+[1.976s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status' returned '0': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/will/Will/RANCS/RANCS-introduction/ros2/src/vehicle_status -DCMAKE_INSTALL_PREFIX=/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status
+[1.980s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status -- -j12 -l12
+[2.055s] [ 50%] [32mBuilding CXX object CMakeFiles/vehicle_status_publisher.dir/src/vehicle_status_publisher.cpp.o[0m
+[2.055s] [ 50%] [32mBuilding CXX object CMakeFiles/vehicle_status_subscriber.dir/src/vehicle_status_subscriber.cpp.o[0m
+[8.442s] [ 75%] [32m[1mLinking CXX executable vehicle_status_publisher[0m
+[8.758s] [ 75%] Built target vehicle_status_publisher
+[12.823s] [100%] [32m[1mLinking CXX executable vehicle_status_subscriber[0m
+[13.224s] [100%] Built target vehicle_status_subscriber
+[13.237s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status' returned '0': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status -- -j12 -l12
+[13.239s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status
+[13.247s] -- Install configuration: ""
+[13.247s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher
+[13.248s] -- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher" to ""
+[13.248s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber
+[13.251s] -- Set runtime path of "/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber" to ""
+[13.252s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/package_run_dependencies/vehicle_status
+[13.252s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/parent_prefix_path/vehicle_status
+[13.252s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.sh
+[13.252s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.dsv
+[13.252s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/path.sh
+[13.253s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/path.dsv
+[13.253s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.bash
+[13.253s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.sh
+[13.253s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.zsh
+[13.253s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.dsv
+[13.253s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/package.dsv
+[13.254s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/packages/vehicle_status
+[13.254s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig.cmake
+[13.254s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig-version.cmake
+[13.254s] -- Installing: /home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/package.xml
+[13.256s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status' returned '0': AMENT_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces:/opt/ros/humble DEBUGINFOD_URLS=https://debuginfod.archlinux.org LD_LIBRARY_PATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/lib:${LD_LIBRARY_PATH} PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/install/interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/will/Will/RANCS/RANCS-introduction/ros2/build/vehicle_status

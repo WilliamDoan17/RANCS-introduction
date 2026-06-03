@@ -1,0 +1,22 @@
+[1.060s] Invoking command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener_py': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/talker_listener_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log --single-version-externally-managed install_data
+[1.307s] running egg_info
+[1.309s] writing ../../build/talker_listener_py/talker_listener_py.egg-info/PKG-INFO
+[1.309s] writing dependency_links to ../../build/talker_listener_py/talker_listener_py.egg-info/dependency_links.txt
+[1.309s] writing entry points to ../../build/talker_listener_py/talker_listener_py.egg-info/entry_points.txt
+[1.309s] writing requirements to ../../build/talker_listener_py/talker_listener_py.egg-info/requires.txt
+[1.309s] writing top-level names to ../../build/talker_listener_py/talker_listener_py.egg-info/top_level.txt
+[1.312s] reading manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[1.313s] writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[1.314s] running build
+[1.314s] running build_py
+[1.314s] running install
+[1.315s] running install_lib
+[1.316s] running install_data
+[1.316s] running install_egg_info
+[1.319s] removing '/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info' (and everything under it)
+[1.319s] Copying ../../build/talker_listener_py/talker_listener_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info
+[1.320s] running install_scripts
+[1.349s] Installing listener script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py
+[1.349s] Installing talker script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py
+[1.349s] writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log'
+[1.403s] Invoked command in '/home/will/Will/RANCS/RANCS-introduction/ros2/src/talker_listener_py' returned '0': DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=[\u@\h \W]\$ PYTHONPATH=/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/talker_listener_py build --build-base /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build install --record /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log --single-version-externally-managed install_data

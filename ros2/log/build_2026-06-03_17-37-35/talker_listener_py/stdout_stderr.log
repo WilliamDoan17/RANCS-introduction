@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/talker_listener_py/talker_listener_py.egg-info
+writing ../../build/talker_listener_py/talker_listener_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/talker_listener_py/talker_listener_py.egg-info/dependency_links.txt
+writing entry points to ../../build/talker_listener_py/talker_listener_py.egg-info/entry_points.txt
+writing requirements to ../../build/talker_listener_py/talker_listener_py.egg-info/requires.txt
+writing top-level names to ../../build/talker_listener_py/talker_listener_py.egg-info/top_level.txt
+writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+copying talker_listener_py/talker.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+copying talker_listener_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+copying talker_listener_py/listener.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py
+running install
+running install_lib
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/talker.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/build/lib/talker_listener_py/listener.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py
+byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/talker.py to talker.cpython-310.pyc
+byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py/listener.py to listener.cpython-310.pyc
+running install_data
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index/packages
+copying resource/talker_listener_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/share/talker_listener_py
+running install_egg_info
+Copying ../../build/talker_listener_py/talker_listener_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing listener script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py
+Installing talker script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/talker_listener_py/lib/talker_listener_py
+writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/talker_listener_py/install.log'

@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/imu_py/imu_py.egg-info
+writing ../../build/imu_py/imu_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_py/imu_py.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_py/imu_py.egg-info/entry_points.txt
+writing requirements to ../../build/imu_py/imu_py.egg-info/requires.txt
+writing top-level names to ../../build/imu_py/imu_py.egg-info/top_level.txt
+writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+copying imu_py/imu_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+copying imu_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+copying imu_py/imu_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py
+running install
+running install_lib
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/imu_publisher.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/__init__.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+copying /home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/build/lib/imu_py/imu_subscriber.py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_publisher.py to imu_publisher.cpython-310.pyc
+byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_subscriber.py to imu_subscriber.cpython-310.pyc
+running install_data
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index
+creating /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index/packages
+copying resource/imu_py -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/share/imu_py
+running install_egg_info
+Copying ../../build/imu_py/imu_py.egg-info to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/python3.10/site-packages/imu_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_publisher script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/imu_py
+Installing imu_subscriber script to /home/will/Will/RANCS/RANCS-introduction/ros2/install/imu_py/lib/imu_py
+writing list of installed files to '/home/will/Will/RANCS/RANCS-introduction/ros2/build/imu_py/install.log'

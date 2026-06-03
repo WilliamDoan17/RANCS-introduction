@@ -1,0 +1,4 @@
+[console_scripts]
+listener = talker_listener_py.listener:main
+talker = talker_listener_py.talker:main
+

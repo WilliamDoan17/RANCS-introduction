@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interfaces/msg/VehicleStatus.msg
+// generated code does not contain a copyright notice
+
+
+module interfaces {
+  module msg {
+    struct VehicleStatus {
+      int8 speed;
+
+      int8 steering_angle;
+    };
+  };
+};

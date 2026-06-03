@@ -1,0 +1,17 @@
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/package_run_dependencies/vehicle_status
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/parent_prefix_path/vehicle_status
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.sh
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.dsv
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/path.sh
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/environment/path.dsv
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.bash
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.sh
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.zsh
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/local_setup.dsv
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/package.dsv
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/ament_index/resource_index/packages/vehicle_status
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig.cmake
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig-version.cmake
+/home/will/Will/RANCS/RANCS-introduction/ros2/install/vehicle_status/share/vehicle_status/package.xml
