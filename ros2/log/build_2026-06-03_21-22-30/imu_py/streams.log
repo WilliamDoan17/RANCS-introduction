@@ -1,0 +1,41 @@
+[0.755s] Invoking command in '/ros2/src/imu_py': PYTHONPATH=/ros2/build/imu_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2/install/imu_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_py build --build-base /ros2/build/imu_py/build install --record /ros2/build/imu_py/install.log --single-version-externally-managed install_data
+[0.938s] running egg_info
+[0.938s] creating ../../build/imu_py/imu_py.egg-info
+[0.938s] writing ../../build/imu_py/imu_py.egg-info/PKG-INFO
+[0.938s] writing dependency_links to ../../build/imu_py/imu_py.egg-info/dependency_links.txt
+[0.938s] writing entry points to ../../build/imu_py/imu_py.egg-info/entry_points.txt
+[0.939s] writing requirements to ../../build/imu_py/imu_py.egg-info/requires.txt
+[0.939s] writing top-level names to ../../build/imu_py/imu_py.egg-info/top_level.txt
+[0.939s] writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+[0.940s] reading manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+[0.941s] writing manifest file '../../build/imu_py/imu_py.egg-info/SOURCES.txt'
+[0.941s] running build
+[0.941s] running build_py
+[0.941s] creating /ros2/build/imu_py/build
+[0.941s] creating /ros2/build/imu_py/build/lib
+[0.941s] creating /ros2/build/imu_py/build/lib/imu_py
+[0.941s] copying imu_py/imu_publisher.py -> /ros2/build/imu_py/build/lib/imu_py
+[0.941s] copying imu_py/__init__.py -> /ros2/build/imu_py/build/lib/imu_py
+[0.941s] copying imu_py/imu_subscriber.py -> /ros2/build/imu_py/build/lib/imu_py
+[0.941s] running install
+[0.942s] running install_lib
+[0.942s] creating /ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[0.942s] copying /ros2/build/imu_py/build/lib/imu_py/imu_publisher.py -> /ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[0.942s] copying /ros2/build/imu_py/build/lib/imu_py/__init__.py -> /ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[0.942s] copying /ros2/build/imu_py/build/lib/imu_py/imu_subscriber.py -> /ros2/install/imu_py/lib/python3.10/site-packages/imu_py
+[0.943s] byte-compiling /ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_publisher.py to imu_publisher.cpython-310.pyc
+[0.943s] byte-compiling /ros2/install/imu_py/lib/python3.10/site-packages/imu_py/__init__.py to __init__.cpython-310.pyc
+[0.943s] byte-compiling /ros2/install/imu_py/lib/python3.10/site-packages/imu_py/imu_subscriber.py to imu_subscriber.cpython-310.pyc
+[0.944s] running install_data
+[0.944s] creating /ros2/install/imu_py/share/ament_index
+[0.944s] creating /ros2/install/imu_py/share/ament_index/resource_index
+[0.944s] creating /ros2/install/imu_py/share/ament_index/resource_index/packages
+[0.944s] copying resource/imu_py -> /ros2/install/imu_py/share/ament_index/resource_index/packages
+[0.944s] copying package.xml -> /ros2/install/imu_py/share/imu_py
+[0.944s] running install_egg_info
+[0.946s] Copying ../../build/imu_py/imu_py.egg-info to /ros2/install/imu_py/lib/python3.10/site-packages/imu_py-0.0.0-py3.10.egg-info
+[0.947s] running install_scripts
+[0.967s] Installing imu_publisher script to /ros2/install/imu_py/lib/imu_py
+[0.967s] Installing imu_subscriber script to /ros2/install/imu_py/lib/imu_py
+[0.967s] writing list of installed files to '/ros2/build/imu_py/install.log'
+[0.993s] Invoked command in '/ros2/src/imu_py' returned '0': PYTHONPATH=/ros2/build/imu_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2/install/imu_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_py build --build-base /ros2/build/imu_py/build install --record /ros2/build/imu_py/install.log --single-version-externally-managed install_data
