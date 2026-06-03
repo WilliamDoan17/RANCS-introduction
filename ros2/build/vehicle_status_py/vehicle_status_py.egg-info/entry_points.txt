@@ -1,0 +1,4 @@
+[console_scripts]
+vehicle_status_publisher = vehicle_status_py.vehicle_status_publisher:main
+vehicle_status_subscriber = vehicle_status_py.vehicle_status_subscriber:main
+

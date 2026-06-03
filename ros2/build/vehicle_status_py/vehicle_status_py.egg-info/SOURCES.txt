@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/vehicle_status_py/vehicle_status_py.egg-info/PKG-INFO
+../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt
+../../build/vehicle_status_py/vehicle_status_py.egg-info/dependency_links.txt
+../../build/vehicle_status_py/vehicle_status_py.egg-info/entry_points.txt
+../../build/vehicle_status_py/vehicle_status_py.egg-info/requires.txt
+../../build/vehicle_status_py/vehicle_status_py.egg-info/top_level.txt
+../../build/vehicle_status_py/vehicle_status_py.egg-info/zip-safe
+resource/vehicle_status_py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+vehicle_status_py/__init__.py
+vehicle_status_py/vehicle_status_publisher.py
+vehicle_status_py/vehicle_status_subscriber.py
