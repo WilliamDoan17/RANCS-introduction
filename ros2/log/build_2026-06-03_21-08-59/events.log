@@ -1,0 +1,401 @@
+[0.000000] (-) TimerEvent: {}
+[0.000204] (imu) JobQueued: {'identifier': 'imu', 'dependencies': OrderedDict()}
+[0.000331] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000394] (talker_listener) JobQueued: {'identifier': 'talker_listener', 'dependencies': OrderedDict()}
+[0.000412] (talker_listener_py) JobQueued: {'identifier': 'talker_listener_py', 'dependencies': OrderedDict()}
+[0.000472] (vehicle_status) JobQueued: {'identifier': 'vehicle_status', 'dependencies': OrderedDict([('interfaces', '/ros2/install/interfaces')])}
+[0.000529] (vehicle_status_py) JobQueued: {'identifier': 'vehicle_status_py', 'dependencies': OrderedDict([('interfaces', '/ros2/install/interfaces')])}
+[0.000864] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.008380] (imu) JobStarted: {'identifier': 'imu'}
+[0.011259] (talker_listener) JobStarted: {'identifier': 'talker_listener'}
+[0.014956] (talker_listener_py) JobStarted: {'identifier': 'talker_listener_py'}
+[0.022738] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.023685] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[0.023753] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2/build/interfaces', '--', '-j12', '-l12'], 'cwd': '/ros2/build/interfaces', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.026093] (imu) JobProgress: {'identifier': 'imu', 'progress': 'cmake'}
+[0.027085] (imu) JobProgress: {'identifier': 'imu', 'progress': 'build'}
+[0.027249] (imu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2/build/imu', '--', '-j12', '-l12'], 'cwd': '/ros2/build/imu', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/imu'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.028233] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'cmake'}
+[0.029050] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'build'}
+[0.029101] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2/build/talker_listener', '--', '-j12', '-l12'], 'cwd': '/ros2/build/talker_listener', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/talker_listener'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.050340] (imu) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.075519] (interfaces) StdoutLine: {'line': b'[  9%] Built target interfaces__rosidl_generator_c\n'}
+[0.076027] (interfaces) StdoutLine: {'line': b'[ 12%] Built target interfaces__cpp\n'}
+[0.082082] (interfaces) StdoutLine: {'line': b'[ 15%] Built target interfaces__rs\n'}
+[0.090974] (interfaces) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_interfaces\n'}
+[0.092076] (talker_listener) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.093386] (talker_listener) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[0.099830] (-) TimerEvent: {}
+[0.103507] (interfaces) StdoutLine: {'line': b'[ 25%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.103938] (interfaces) StdoutLine: {'line': b'[ 34%] Built target interfaces__rosidl_typesupport_c\n'}
+[0.106444] (interfaces) StdoutLine: {'line': b'[ 43%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[0.108454] (interfaces) StdoutLine: {'line': b'[ 62%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.108843] (interfaces) StdoutLine: {'line': b'[ 62%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.109833] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[0.129278] (interfaces) StdoutLine: {'line': b'[ 71%] Built target interfaces\n'}
+[0.146545] (interfaces) StdoutLine: {'line': b'[ 75%] Built target interfaces__py\n'}
+[0.165509] (interfaces) StdoutLine: {'line': b'[ 81%] Built target interfaces__rosidl_generator_py\n'}
+[0.184958] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.185156] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[0.185281] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.191777] (imu) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199905] (-) TimerEvent: {}
+[0.227064] (imu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.229470] (imu) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.235201] (imu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.244281] (imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.256493] (imu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.264893] (talker_listener) CommandEnded: {'returncode': 0}
+[0.265653] (talker_listener) JobProgress: {'identifier': 'talker_listener', 'progress': 'install'}
+[0.273754] (talker_listener) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2/build/talker_listener'], 'cwd': '/ros2/build/talker_listener', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/talker_listener'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.278047] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.278640] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[0.278780] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[0.278940] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[0.279087] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[0.279460] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[0.279715] (talker_listener) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.279939] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/lib/talker_listener/talker\n'}
+[0.280318] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/lib/talker_listener/listener\n'}
+[0.280500] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/ament_index/resource_index/package_run_dependencies/talker_listener\n'}
+[0.280624] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/ament_index/resource_index/parent_prefix_path/talker_listener\n'}
+[0.280773] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/environment/ament_prefix_path.sh\n'}
+[0.280869] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/environment/ament_prefix_path.dsv\n'}
+[0.281054] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/environment/path.sh\n'}
+[0.281158] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/environment/path.dsv\n'}
+[0.281211] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/local_setup.bash\n'}
+[0.281262] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/local_setup.sh\n'}
+[0.281311] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/local_setup.zsh\n'}
+[0.281359] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/local_setup.dsv\n'}
+[0.281407] (talker_listener) StdoutLine: {'line': b'-- Installing: /ros2/install/talker_listener/share/talker_listener/package.dsv\n'}
+[0.281455] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/ament_index/resource_index/packages/talker_listener\n'}
+[0.281517] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/cmake/talker_listenerConfig.cmake\n'}
+[0.281567] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/cmake/talker_listenerConfig-version.cmake\n'}
+[0.281617] (talker_listener) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/talker_listener/share/talker_listener/package.xml\n'}
+[0.282828] (talker_listener) CommandEnded: {'returncode': 0}
+[0.292138] (imu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.293435] (imu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.300546] (talker_listener) JobEnded: {'identifier': 'talker_listener', 'rc': 0}
+[0.301270] (-) TimerEvent: {}
+[0.312288] (interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[0.323743] (interfaces) CommandEnded: {'returncode': 0}
+[0.325075] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[0.325485] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2/build/interfaces'], 'cwd': '/ros2/build/interfaces', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/interfaces'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.332174] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.332500] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[0.332647] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces\n'}
+[0.332827] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.332983] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.333095] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__functions.h\n'}
+[0.333245] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.h\n'}
+[0.333424] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__functions.c\n'}
+[0.333533] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__struct.h\n'}
+[0.333640] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.333769] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/vehicle_status.h\n'}
+[0.333866] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[0.333973] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[0.334204] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[0.334387] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces\n'}
+[0.334529] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.334646] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.334748] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_c.h\n'}
+[0.334935] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.335085] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.335209] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces\n'}
+[0.335319] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.335425] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.335528] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.c\n'}
+[0.335667] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_introspection_c.h\n'}
+[0.335819] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.335967] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.336125] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[0.336264] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces\n'}
+[0.336424] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.336528] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.336633] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__traits.hpp\n'}
+[0.336818] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.hpp\n'}
+[0.336912] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__builder.hpp\n'}
+[0.337047] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__struct.hpp\n'}
+[0.337141] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.337248] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/vehicle_status.hpp\n'}
+[0.337343] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces\n'}
+[0.337441] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.337550] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.337638] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.337723] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps\n'}
+[0.337815] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.337910] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.338022] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces\n'}
+[0.338123] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg\n'}
+[0.338215] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[0.338309] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.338403] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/include/interfaces/interfaces/msg/detail/vehicle_status__type_support.cpp\n'}
+[0.338493] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.338599] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[0.338731] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[0.338834] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[0.339013] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[0.339222] (interfaces) StdoutLine: {'line': b'-- Installing: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.339374] (interfaces) StdoutLine: {'line': b'-- Installing: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.339486] (interfaces) StdoutLine: {'line': b'-- Installing: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.339575] (interfaces) StdoutLine: {'line': b'-- Installing: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.339715] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[0.339811] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.339902] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.340147] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[0.340243] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg\n'}
+[0.340330] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_vehicle_status_s.c\n'}
+[0.340442] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py\n'}
+[0.340592] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_vehicle_status.py\n'}
+[0.340808] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.340920] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.341060] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.341170] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.341295] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[0.366394] (interfaces) StdoutLine: {'line': b"Listing '/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[0.366596] (interfaces) StdoutLine: {'line': b"Listing '/ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg'...\n"}
+[0.370582] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.370856] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.371126] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.371392] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[0.371568] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/ament_index/resource_index/rust_packages/interfaces\n'}
+[0.371685] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust\n'}
+[0.371838] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/Cargo.toml\n'}
+[0.371957] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/src\n'}
+[0.372064] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/src/lib.rs\n'}
+[0.372229] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/src/msg\n'}
+[0.372410] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/src/msg/rmw.rs\n'}
+[0.372515] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/src/msg.rs\n'}
+[0.372619] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/rust/build.rs\n'}
+[0.372725] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/msg/VehicleStatus.idl\n'}
+[0.372828] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/msg/VehicleStatus.msg\n'}
+[0.372931] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[0.373043] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[0.373150] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[0.373315] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[0.373421] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/path.sh\n'}
+[0.373621] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[0.373725] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/local_setup.bash\n'}
+[0.373885] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/local_setup.sh\n'}
+[0.374002] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[0.374103] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[0.374202] (interfaces) StdoutLine: {'line': b'-- Installing: /ros2/install/interfaces/share/interfaces/package.dsv\n'}
+[0.374297] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[0.374396] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.374494] (imu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.374596] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.374687] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.374778] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.374874] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.374978] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.375080] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.375176] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.375271] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.375368] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.375470] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.375713] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.375905] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.376152] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.376266] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.377129] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.377290] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.377559] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.377676] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.377941] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.378170] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.378326] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.378471] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.378636] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.378792] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[0.378930] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[0.379079] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/interfaces/share/interfaces/package.xml\n'}
+[0.379212] (interfaces) CommandEnded: {'returncode': 0}
+[0.392328] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[0.392836] (vehicle_status) JobStarted: {'identifier': 'vehicle_status'}
+[0.395351] (vehicle_status_py) JobStarted: {'identifier': 'vehicle_status_py'}
+[0.401352] (-) TimerEvent: {}
+[0.402419] (vehicle_status) JobProgress: {'identifier': 'vehicle_status', 'progress': 'cmake'}
+[0.402967] (vehicle_status) JobProgress: {'identifier': 'vehicle_status', 'progress': 'build'}
+[0.403648] (vehicle_status) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2/build/vehicle_status', '--', '-j12', '-l12'], 'cwd': '/ros2/build/vehicle_status', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/vehicle_status'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/interfaces:/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.431037] (imu) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.456987] (vehicle_status) StdoutLine: {'line': b'[ 50%] Built target vehicle_status_publisher\n'}
+[0.457841] (vehicle_status) StdoutLine: {'line': b'[100%] Built target vehicle_status_subscriber\n'}
+[0.463621] (imu) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.501439] (-) TimerEvent: {}
+[0.528672] (imu) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.528875] (imu) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.528936] (imu) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.529263] (imu) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.529994] (imu) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.530096] (imu) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.530345] (imu) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.531045] (imu) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.542952] (imu) StdoutLine: {'line': b'-- Generating done\n'}
+[0.547707] (imu) StdoutLine: {'line': b'-- Build files have been written to: /ros2/build/imu\n'}
+[0.569136] (imu) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imu_publisher\x1b[0m\n'}
+[0.576988] (imu) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/imu_subscriber.dir/src/imu_subscriber.cpp.o\x1b[0m\n'}
+[0.583950] (imu) StdoutLine: {'line': b'[ 75%] Built target imu_publisher\n'}
+[0.601501] (talker_listener_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/talker_listener_py', 'build', '--build-base', '/ros2/build/talker_listener_py/build', 'install', '--record', '/ros2/build/talker_listener_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/ros2/src/talker_listener_py', 'env': {'HOSTNAME': 'a0501fccffd9', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ros2/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble', 'PWD': '/ros2/build/talker_listener_py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces'}, 'shell': False}
+[0.602804] (-) TimerEvent: {}
+[0.603020] (vehicle_status) CommandEnded: {'returncode': 0}
+[0.603957] (vehicle_status) JobProgress: {'identifier': 'vehicle_status', 'progress': 'install'}
+[0.604014] (vehicle_status) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2/build/vehicle_status'], 'cwd': '/ros2/build/vehicle_status', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/vehicle_status'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/interfaces:/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[0.610422] (vehicle_status) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.610859] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_publisher\n'}
+[0.611309] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/lib/vehicle_status/vehicle_status_subscriber\n'}
+[0.611670] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/ament_index/resource_index/package_run_dependencies/vehicle_status\n'}
+[0.611864] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/ament_index/resource_index/parent_prefix_path/vehicle_status\n'}
+[0.612006] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.sh\n'}
+[0.612110] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/environment/ament_prefix_path.dsv\n'}
+[0.612211] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/environment/path.sh\n'}
+[0.612346] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/environment/path.dsv\n'}
+[0.612517] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/local_setup.bash\n'}
+[0.612616] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/local_setup.sh\n'}
+[0.612715] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/local_setup.zsh\n'}
+[0.612807] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/local_setup.dsv\n'}
+[0.612898] (vehicle_status) StdoutLine: {'line': b'-- Installing: /ros2/install/vehicle_status/share/vehicle_status/package.dsv\n'}
+[0.612990] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/ament_index/resource_index/packages/vehicle_status\n'}
+[0.613048] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig.cmake\n'}
+[0.613130] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/cmake/vehicle_statusConfig-version.cmake\n'}
+[0.613210] (vehicle_status) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/vehicle_status/share/vehicle_status/package.xml\n'}
+[0.614349] (vehicle_status) CommandEnded: {'returncode': 0}
+[0.632210] (vehicle_status) JobEnded: {'identifier': 'vehicle_status', 'rc': 0}
+[0.702910] (-) TimerEvent: {}
+[0.770377] (talker_listener_py) StdoutLine: {'line': b'running egg_info\n'}
+[0.771103] (talker_listener_py) StdoutLine: {'line': b'writing ../../build/talker_listener_py/talker_listener_py.egg-info/PKG-INFO\n'}
+[0.771332] (talker_listener_py) StdoutLine: {'line': b'writing dependency_links to ../../build/talker_listener_py/talker_listener_py.egg-info/dependency_links.txt\n'}
+[0.771607] (talker_listener_py) StdoutLine: {'line': b'writing entry points to ../../build/talker_listener_py/talker_listener_py.egg-info/entry_points.txt\n'}
+[0.771778] (talker_listener_py) StdoutLine: {'line': b'writing requirements to ../../build/talker_listener_py/talker_listener_py.egg-info/requires.txt\n'}
+[0.771869] (talker_listener_py) StdoutLine: {'line': b'writing top-level names to ../../build/talker_listener_py/talker_listener_py.egg-info/top_level.txt\n'}
+[0.773588] (talker_listener_py) StdoutLine: {'line': b"reading manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'\n"}
+[0.774470] (talker_listener_py) StdoutLine: {'line': b"writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'\n"}
+[0.774629] (talker_listener_py) StdoutLine: {'line': b'running build\n'}
+[0.774689] (talker_listener_py) StdoutLine: {'line': b'running build_py\n'}
+[0.774870] (talker_listener_py) StdoutLine: {'line': b'running install\n'}
+[0.775216] (talker_listener_py) StdoutLine: {'line': b'running install_lib\n'}
+[0.776241] (talker_listener_py) StdoutLine: {'line': b'running install_data\n'}
+[0.776408] (talker_listener_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.777862] (talker_listener_py) StdoutLine: {'line': b"removing '/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.778156] (talker_listener_py) StdoutLine: {'line': b'Copying ../../build/talker_listener_py/talker_listener_py.egg-info to /ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info\n'}
+[0.778809] (talker_listener_py) StdoutLine: {'line': b'running install_scripts\n'}
+[0.798146] (talker_listener_py) StdoutLine: {'line': b'Installing listener script to /ros2/install/talker_listener_py/lib/talker_listener_py\n'}
+[0.798369] (talker_listener_py) StdoutLine: {'line': b'Installing talker script to /ros2/install/talker_listener_py/lib/talker_listener_py\n'}
+[0.798590] (talker_listener_py) StdoutLine: {'line': b"writing list of installed files to '/ros2/build/talker_listener_py/install.log'\n"}
+[0.803029] (-) TimerEvent: {}
+[0.822269] (talker_listener_py) CommandEnded: {'returncode': 0}
+[0.827754] (talker_listener_py) JobEnded: {'identifier': 'talker_listener_py', 'rc': 0}
+[0.856820] (vehicle_status_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/vehicle_status_py', 'build', '--build-base', '/ros2/build/vehicle_status_py/build', 'install', '--record', '/ros2/build/vehicle_status_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/ros2/src/vehicle_status_py', 'env': {'HOSTNAME': 'a0501fccffd9', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/ros2/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble', 'PWD': '/ros2/build/vehicle_status_py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2/build/vehicle_status_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/ros2/install/interfaces:/ros2/install/vehicle_status:/ros2/install/talker_listener'}, 'shell': False}
+[0.903123] (-) TimerEvent: {}
+[1.003419] (-) TimerEvent: {}
+[1.025155] (vehicle_status_py) StdoutLine: {'line': b'running egg_info\n'}
+[1.025757] (vehicle_status_py) StdoutLine: {'line': b'writing ../../build/vehicle_status_py/vehicle_status_py.egg-info/PKG-INFO\n'}
+[1.025901] (vehicle_status_py) StdoutLine: {'line': b'writing dependency_links to ../../build/vehicle_status_py/vehicle_status_py.egg-info/dependency_links.txt\n'}
+[1.026099] (vehicle_status_py) StdoutLine: {'line': b'writing entry points to ../../build/vehicle_status_py/vehicle_status_py.egg-info/entry_points.txt\n'}
+[1.026253] (vehicle_status_py) StdoutLine: {'line': b'writing requirements to ../../build/vehicle_status_py/vehicle_status_py.egg-info/requires.txt\n'}
+[1.026429] (vehicle_status_py) StdoutLine: {'line': b'writing top-level names to ../../build/vehicle_status_py/vehicle_status_py.egg-info/top_level.txt\n'}
+[1.028228] (vehicle_status_py) StdoutLine: {'line': b"reading manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'\n"}
+[1.029172] (vehicle_status_py) StdoutLine: {'line': b"writing manifest file '../../build/vehicle_status_py/vehicle_status_py.egg-info/SOURCES.txt'\n"}
+[1.029410] (vehicle_status_py) StdoutLine: {'line': b'running build\n'}
+[1.029467] (vehicle_status_py) StdoutLine: {'line': b'running build_py\n'}
+[1.029686] (vehicle_status_py) StdoutLine: {'line': b'running install\n'}
+[1.029970] (vehicle_status_py) StdoutLine: {'line': b'running install_lib\n'}
+[1.031025] (vehicle_status_py) StdoutLine: {'line': b'running install_data\n'}
+[1.031221] (vehicle_status_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.032719] (vehicle_status_py) StdoutLine: {'line': b"removing '/ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.032931] (vehicle_status_py) StdoutLine: {'line': b'Copying ../../build/vehicle_status_py/vehicle_status_py.egg-info to /ros2/install/vehicle_status_py/lib/python3.10/site-packages/vehicle_status_py-0.0.0-py3.10.egg-info\n'}
+[1.033681] (vehicle_status_py) StdoutLine: {'line': b'running install_scripts\n'}
+[1.051696] (vehicle_status_py) StdoutLine: {'line': b'Installing vehicle_status_publisher script to /ros2/install/vehicle_status_py/lib/vehicle_status_py\n'}
+[1.051867] (vehicle_status_py) StdoutLine: {'line': b'Installing vehicle_status_subscriber script to /ros2/install/vehicle_status_py/lib/vehicle_status_py\n'}
+[1.052168] (vehicle_status_py) StdoutLine: {'line': b"writing list of installed files to '/ros2/build/vehicle_status_py/install.log'\n"}
+[1.073107] (vehicle_status_py) CommandEnded: {'returncode': 0}
+[1.078377] (vehicle_status_py) JobEnded: {'identifier': 'vehicle_status_py', 'rc': 0}
+[1.103567] (-) TimerEvent: {}
+[1.203819] (-) TimerEvent: {}
+[1.304088] (-) TimerEvent: {}
+[1.404442] (-) TimerEvent: {}
+[1.504706] (-) TimerEvent: {}
+[1.604990] (-) TimerEvent: {}
+[1.705271] (-) TimerEvent: {}
+[1.805549] (-) TimerEvent: {}
+[1.905827] (-) TimerEvent: {}
+[2.006089] (-) TimerEvent: {}
+[2.106373] (-) TimerEvent: {}
+[2.206636] (-) TimerEvent: {}
+[2.306897] (-) TimerEvent: {}
+[2.407155] (-) TimerEvent: {}
+[2.507392] (-) TimerEvent: {}
+[2.607679] (-) TimerEvent: {}
+[2.707933] (-) TimerEvent: {}
+[2.808201] (-) TimerEvent: {}
+[2.908477] (-) TimerEvent: {}
+[3.008736] (-) TimerEvent: {}
+[3.109037] (-) TimerEvent: {}
+[3.209312] (-) TimerEvent: {}
+[3.309576] (-) TimerEvent: {}
+[3.409832] (-) TimerEvent: {}
+[3.510109] (-) TimerEvent: {}
+[3.610337] (-) TimerEvent: {}
+[3.710625] (-) TimerEvent: {}
+[3.810891] (-) TimerEvent: {}
+[3.911165] (-) TimerEvent: {}
+[4.011439] (-) TimerEvent: {}
+[4.111717] (-) TimerEvent: {}
+[4.212025] (-) TimerEvent: {}
+[4.312296] (-) TimerEvent: {}
+[4.412580] (-) TimerEvent: {}
+[4.512847] (-) TimerEvent: {}
+[4.613082] (-) TimerEvent: {}
+[4.713349] (-) TimerEvent: {}
+[4.813595] (-) TimerEvent: {}
+[4.913881] (-) TimerEvent: {}
+[5.014149] (-) TimerEvent: {}
+[5.114422] (-) TimerEvent: {}
+[5.214697] (-) TimerEvent: {}
+[5.315054] (-) TimerEvent: {}
+[5.415353] (-) TimerEvent: {}
+[5.515608] (-) TimerEvent: {}
+[5.615861] (-) TimerEvent: {}
+[5.716111] (-) TimerEvent: {}
+[5.816363] (-) TimerEvent: {}
+[5.916614] (-) TimerEvent: {}
+[6.016868] (-) TimerEvent: {}
+[6.117093] (-) TimerEvent: {}
+[6.217360] (-) TimerEvent: {}
+[6.317634] (-) TimerEvent: {}
+[6.417899] (-) TimerEvent: {}
+[6.518179] (-) TimerEvent: {}
+[6.618452] (-) TimerEvent: {}
+[6.718746] (-) TimerEvent: {}
+[6.819074] (-) TimerEvent: {}
+[6.919356] (-) TimerEvent: {}
+[7.019647] (-) TimerEvent: {}
+[7.030846] (imu) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable imu_subscriber\x1b[0m\n'}
+[7.119779] (-) TimerEvent: {}
+[7.220043] (-) TimerEvent: {}
+[7.320305] (-) TimerEvent: {}
+[7.349693] (imu) StdoutLine: {'line': b'[100%] Built target imu_subscriber\n'}
+[7.360036] (imu) CommandEnded: {'returncode': 0}
+[7.361671] (imu) JobProgress: {'identifier': 'imu', 'progress': 'install'}
+[7.362101] (imu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2/build/imu'], 'cwd': '/ros2/build/imu', 'env': OrderedDict([('HOSTNAME', 'a0501fccffd9'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/ros2/install/interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/ros2/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ros2/install/vehicle_status_py:/ros2/install/vehicle_status:/ros2/install/talker_listener_py:/ros2/install/talker_listener:/ros2/install/interfaces:/opt/ros/humble'), ('PWD', '/ros2/build/imu'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros2/install/vehicle_status_py/lib/python3.10/site-packages:/ros2/install/talker_listener_py/lib/python3.10/site-packages:/ros2/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros2/install/vehicle_status:/ros2/install/talker_listener:/ros2/install/interfaces:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble')]), 'shell': False}
+[7.369755] (imu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.369941] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/lib/imu/imu_publisher\n'}
+[7.370080] (imu) StdoutLine: {'line': b'-- Installing: /ros2/install/imu/lib/imu/imu_subscriber\n'}
+[7.373300] (imu) StdoutLine: {'line': b'-- Set runtime path of "/ros2/install/imu/lib/imu/imu_subscriber" to ""\n'}
+[7.373518] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/package_run_dependencies/imu\n'}
+[7.373709] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/parent_prefix_path/imu\n'}
+[7.373827] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/environment/ament_prefix_path.sh\n'}
+[7.373965] (imu) StdoutLine: {'line': b'-- Installing: /ros2/install/imu/share/imu/environment/ament_prefix_path.dsv\n'}
+[7.374117] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/environment/path.sh\n'}
+[7.374225] (imu) StdoutLine: {'line': b'-- Installing: /ros2/install/imu/share/imu/environment/path.dsv\n'}
+[7.374313] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/local_setup.bash\n'}
+[7.374398] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/local_setup.sh\n'}
+[7.374482] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/local_setup.zsh\n'}
+[7.374566] (imu) StdoutLine: {'line': b'-- Installing: /ros2/install/imu/share/imu/local_setup.dsv\n'}
+[7.374651] (imu) StdoutLine: {'line': b'-- Installing: /ros2/install/imu/share/imu/package.dsv\n'}
+[7.374735] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/packages/imu\n'}
+[7.374819] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/cmake/imuConfig.cmake\n'}
+[7.374903] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/cmake/imuConfig-version.cmake\n'}
+[7.374980] (imu) StdoutLine: {'line': b'-- Up-to-date: /ros2/install/imu/share/imu/package.xml\n'}
+[7.375574] (imu) CommandEnded: {'returncode': 0}
+[7.386836] (imu) JobEnded: {'identifier': 'imu', 'rc': 0}
+[7.387449] (-) EventReactorShutdown: {}

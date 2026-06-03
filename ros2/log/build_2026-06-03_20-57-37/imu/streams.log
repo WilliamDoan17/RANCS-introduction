@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --build /ros2/build/imu -- -j12 -l12
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target imu_publisher[0m
+[0.090s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[3.500s] [100%] [32m[1mLinking CXX executable imu_publisher[0m
+[3.658s] [100%] Built target imu_publisher
+[3.667s] Invoked command in '/ros2/build/imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --build /ros2/build/imu -- -j12 -l12
+[3.668s] Invoking command in '/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --install /ros2/build/imu
+[3.674s] -- Install configuration: ""
+[3.674s] -- Installing: /ros2/install/imu/lib/imu/imu_publisher
+[3.675s] -- Set runtime path of "/ros2/install/imu/lib/imu/imu_publisher" to ""
+[3.675s] -- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/package_run_dependencies/imu
+[3.676s] -- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/parent_prefix_path/imu
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/environment/ament_prefix_path.sh
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/environment/ament_prefix_path.dsv
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/environment/path.sh
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/environment/path.dsv
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/local_setup.bash
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/local_setup.sh
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/local_setup.zsh
+[3.676s] -- Up-to-date: /ros2/install/imu/share/imu/local_setup.dsv
+[3.676s] -- Installing: /ros2/install/imu/share/imu/package.dsv
+[3.677s] -- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/packages/imu
+[3.677s] -- Up-to-date: /ros2/install/imu/share/imu/cmake/imuConfig.cmake
+[3.677s] -- Up-to-date: /ros2/install/imu/share/imu/cmake/imuConfig-version.cmake
+[3.677s] -- Up-to-date: /ros2/install/imu/share/imu/package.xml
+[3.678s] Invoked command in '/ros2/build/imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --install /ros2/build/imu

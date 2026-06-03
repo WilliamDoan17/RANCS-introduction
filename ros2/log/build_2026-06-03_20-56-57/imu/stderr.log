@@ -1,0 +1,5 @@
+[01m[K/ros2/src/imu/src/imu_publisher.cpp:[m[K In member function ‘[01m[Kvoid ImuPublisher::publish_imu()[m[K’:
+[01m[K/ros2/src/imu/src/imu_publisher.cpp:13:16:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[KImu[m[K’ {aka ‘[01m[Ksensor_msgs::msg::Imu_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Ksensor_msgs::msg::Imu_<ContainerAllocator>::Imu_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   13 |     Imu imu = {[01;35m[K}[m[K;
+      |                [01;35m[K^[m[K
+[01m[K/ros2/src/imu/src/imu_publisher.cpp:13:16:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit

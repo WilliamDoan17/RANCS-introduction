@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target imu_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[01m[K/ros2/src/imu/src/imu_publisher.cpp:[m[K In member function ‘[01m[Kvoid ImuPublisher::publish_imu()[m[K’:
+[01m[K/ros2/src/imu/src/imu_publisher.cpp:13:16:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[KImu[m[K’ {aka ‘[01m[Ksensor_msgs::msg::Imu_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Ksensor_msgs::msg::Imu_<ContainerAllocator>::Imu_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   13 |     Imu imu = {[01;35m[K}[m[K;
+      |                [01;35m[K^[m[K
+[01m[K/ros2/src/imu/src/imu_publisher.cpp:13:16:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[100%] [32m[1mLinking CXX executable imu_publisher[0m
+[100%] Built target imu_publisher
+-- Install configuration: ""
+-- Installing: /ros2/install/imu/lib/imu/imu_publisher
+-- Set runtime path of "/ros2/install/imu/lib/imu/imu_publisher" to ""
+-- Installing: /ros2/install/imu/share/ament_index/resource_index/package_run_dependencies/imu
+-- Installing: /ros2/install/imu/share/ament_index/resource_index/parent_prefix_path/imu
+-- Installing: /ros2/install/imu/share/imu/environment/ament_prefix_path.sh
+-- Installing: /ros2/install/imu/share/imu/environment/ament_prefix_path.dsv
+-- Installing: /ros2/install/imu/share/imu/environment/path.sh
+-- Installing: /ros2/install/imu/share/imu/environment/path.dsv
+-- Installing: /ros2/install/imu/share/imu/local_setup.bash
+-- Installing: /ros2/install/imu/share/imu/local_setup.sh
+-- Installing: /ros2/install/imu/share/imu/local_setup.zsh
+-- Installing: /ros2/install/imu/share/imu/local_setup.dsv
+-- Installing: /ros2/install/imu/share/imu/package.dsv
+-- Installing: /ros2/install/imu/share/ament_index/resource_index/packages/imu
+-- Installing: /ros2/install/imu/share/imu/cmake/imuConfig.cmake
+-- Installing: /ros2/install/imu/share/imu/cmake/imuConfig-version.cmake
+-- Installing: /ros2/install/imu/share/imu/package.xml

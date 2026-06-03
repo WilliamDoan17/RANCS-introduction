@@ -1,0 +1,22 @@
+[0.590s] Invoking command in '/ros2/src/talker_listener_py': PYTHONPATH=/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2/install/talker_listener_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/talker_listener_py build --build-base /ros2/build/talker_listener_py/build install --record /ros2/build/talker_listener_py/install.log --single-version-externally-managed install_data
+[0.766s] running egg_info
+[0.767s] writing ../../build/talker_listener_py/talker_listener_py.egg-info/PKG-INFO
+[0.767s] writing dependency_links to ../../build/talker_listener_py/talker_listener_py.egg-info/dependency_links.txt
+[0.768s] writing entry points to ../../build/talker_listener_py/talker_listener_py.egg-info/entry_points.txt
+[0.768s] writing requirements to ../../build/talker_listener_py/talker_listener_py.egg-info/requires.txt
+[0.768s] writing top-level names to ../../build/talker_listener_py/talker_listener_py.egg-info/top_level.txt
+[0.770s] reading manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[0.771s] writing manifest file '../../build/talker_listener_py/talker_listener_py.egg-info/SOURCES.txt'
+[0.771s] running build
+[0.771s] running build_py
+[0.771s] running install
+[0.771s] running install_lib
+[0.772s] running install_data
+[0.773s] running install_egg_info
+[0.774s] removing '/ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info' (and everything under it)
+[0.774s] Copying ../../build/talker_listener_py/talker_listener_py.egg-info to /ros2/install/talker_listener_py/lib/python3.10/site-packages/talker_listener_py-0.0.0-py3.10.egg-info
+[0.775s] running install_scripts
+[0.796s] Installing listener script to /ros2/install/talker_listener_py/lib/talker_listener_py
+[0.796s] Installing talker script to /ros2/install/talker_listener_py/lib/talker_listener_py
+[0.796s] writing list of installed files to '/ros2/build/talker_listener_py/install.log'
+[0.821s] Invoked command in '/ros2/src/talker_listener_py' returned '0': PYTHONPATH=/ros2/build/talker_listener_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2/install/talker_listener_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/talker_listener_py build --build-base /ros2/build/talker_listener_py/build install --record /ros2/build/talker_listener_py/install.log --single-version-externally-managed install_data

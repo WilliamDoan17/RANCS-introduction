@@ -1,0 +1,173 @@
+[0.026s] Invoking command in '/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake /ros2/src/imu -DCMAKE_INSTALL_PREFIX=/ros2/install/imu
+[0.036s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.179s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.203s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.205s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.211s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.220s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.266s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.269s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.344s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.403s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.435s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.506s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.507s] -- Configured cppcheck include dirs: 
+[0.507s] -- Configured cppcheck exclude dirs and/or files: 
+[0.507s] -- Added test 'lint_cmake' to check CMake code style
+[0.508s] -- Added test 'uncrustify' to check C / C++ code style
+[0.508s] -- Configured uncrustify additional arguments: 
+[0.509s] -- Added test 'xmllint' to check XML markup files
+[0.510s] -- Configuring done
+[0.519s] -- Generating done
+[0.522s] -- Build files have been written to: /ros2/build/imu
+[0.587s] Invoked command in '/ros2/build/imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake /ros2/src/imu -DCMAKE_INSTALL_PREFIX=/ros2/install/imu
+[0.587s] Invoking command in '/ros2/build/imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --build /ros2/build/imu -- -j12 -l12
+[0.632s] [ 50%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[2.434s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:9:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope; did you mean ‘[01m[KImu[m[K’?
+[2.434s]     9 |   rclcpp::Publisher<[01;31m[Kimu[m[K>::SharedPtr publisher_;
+[2.434s]       |                     [01;31m[K^~~[m[K
+[2.434s]       |                     [32m[KImu[m[K
+[2.434s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:9:24:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.434s]     9 |   rclcpp::Publisher<imu[01;31m[K>[m[K::SharedPtr publisher_;
+[2.434s]       |                        [01;31m[K^[m[K
+[2.434s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:9:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.434s]     9 |   rclcpp::Publisher<imu>::[01;31m[KSharedPtr[m[K publisher_;
+[2.434s]       |                           [01;31m[K^~~~~~~~~[m[K
+[2.434s]       |                                    [32m[K;[m[K
+[2.435s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:9:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[KImuPublisher[m[K’?
+[2.435s]     9 | rclcpp::Publisher<imu>::SharedPtr [01;31m[Kpublisher_[m[K;
+[2.435s]       |                                   [01;31m[K^~~~~~~~~~[m[K
+[2.435s]       |                                   [32m[KImuPublisher[m[K
+[2.435s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:[m[K In member function ‘[01m[Kvoid ImuPublisher::publish_imu()[m[K’:
+[2.435s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:13:16:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[KImu[m[K’ {aka ‘[01m[Ksensor_msgs::msg::Imu_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Ksensor_msgs::msg::Imu_<ContainerAllocator>::Imu_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[2.435s]    13 |     Imu imu = {[01;35m[K}[m[K;
+[2.435s]       |                [01;35m[K^[m[K
+[2.435s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:13:16:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[2.440s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KImuPublisher[m[K’?
+[2.440s]    17 |     [01;31m[Kpublisher_[m[K->publish(imu);
+[2.440s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.440s]       |     [32m[KImuPublisher[m[K
+[2.440s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.440s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.441s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.441s]                  from [01m[K/ros2/src/imu/src/imu_publisher.cpp:1[m[K:
+[2.441s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:19:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+[2.441s]    19 |                 [01;35m[K"Publishing:\n\tLinear acceleration x: %d\n\t Linear "[m[K
+[2.441s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.441s]    20 | [01;35m[K                "acceleration y: %d\n\tLinear acceleration z: %d"[m[K,
+[2.441s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.441s]    21 |                 [32m[Kimu.linear_acceleration.x[m[K, imu.linear_acceleration.y,
+[2.441s]       |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.441s]       |                                         [32m[K|[m[K
+[2.441s]       |                                         [32m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type {aka double}[m[K
+[2.441s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:19:57:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.441s]    19 | shing:\n\tLinear acceleration x: [01;36m[K%d[m[K\n\t Linear "
+[2.441s]       |                                  [01;36m[K~^[m[K
+[2.441s]       |                                   [01;36m[K|[m[K
+[2.442s]       |                                   [01;36m[Kint[m[K
+[2.442s]       |                                  [32m[K%f[m[K
+[2.442s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.442s]                  from [01m[K/ros2/src/imu/src/imu_publisher.cpp:1[m[K:
+[2.442s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:19:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+[2.442s]    19 |                 [01;35m[K"Publishing:\n\tLinear acceleration x: %d\n\t Linear "[m[K
+[2.442s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.442s]    20 | [01;35m[K                "acceleration y: %d\n\tLinear acceleration z: %d"[m[K,
+[2.442s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.442s]    21 |                 imu.linear_acceleration.x, [32m[Kimu.linear_acceleration.y[m[K,
+[2.442s]       |                                            [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.442s]       |                                                                    [32m[K|[m[K
+[2.442s]       |                                                                    [32m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type {aka double}[m[K
+[2.443s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:20:35:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.443s]    20 |                 "acceleration y: [01;36m[K%d[m[K\n\tLinear acceleration z: %d",
+[2.443s]       |                                  [01;36m[K~^[m[K
+[2.443s]       |                                   [01;36m[K|[m[K
+[2.443s]       |                                   [01;36m[Kint[m[K
+[2.443s]       |                                  [32m[K%f[m[K
+[2.443s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.443s]                  from [01m[K/ros2/src/imu/src/imu_publisher.cpp:1[m[K:
+[2.443s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:19:17:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_z_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K-Wformat=[m[K]
+[2.443s]    19 |                 [01;35m[K"Publishing:\n\tLinear acceleration x: %d\n\t Linear "[m[K
+[2.443s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.443s]    20 | [01;35m[K                "acceleration y: %d\n\tLinear acceleration z: %d"[m[K,
+[2.443s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.444s]    21 |                 imu.linear_acceleration.x, imu.linear_acceleration.y,
+[2.444s]    22 |                 [32m[Kimu.linear_acceleration.z[m[K);
+[2.444s]       |                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.444s]       |                                         [32m[K|[m[K
+[2.444s]       |                                         [32m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_z_type {aka double}[m[K
+[2.444s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:20:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.444s]    20 | leration y: %d\n\tLinear acceleration z: [01;36m[K%d[m[K",
+[2.444s]       |                                          [01;36m[K~^[m[K
+[2.444s]       |                                           [01;36m[K|[m[K
+[2.444s]       |                                           [01;36m[Kint[m[K
+[2.444s]       |                                          [32m[K%f[m[K
+[2.445s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:[m[K In constructor ‘[01m[KImuPublisher::ImuPublisher()[m[K’:
+[2.445s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KImuPublisher[m[K’?
+[2.445s]    27 |     [01;31m[Kpublisher_[m[K = this->create_publisher<Imu>("/imu", 10);
+[2.445s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.445s]       |     [32m[KImuPublisher[m[K
+[2.448s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:28:63:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ImuPublisher::publish_imu()[m[K’
+[2.448s]    28 | ll_timer(std::chrono::seconds(1), [01;31m[Kpublish_imu[m[K);
+[2.448s]       |                                   [01;31m[K^~~~~~~~~~~[m[K
+[2.448s] 
+[2.449s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:12:8:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.449s]    12 |   void [01;36m[Kpublish_imu[m[K() {
+[2.449s]       |        [01;36m[K^~~~~~~~~~~[m[K
+[2.449s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.449s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:33:15:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&, rclcpp::SignalHandlerOptions)[m[K’
+[2.449s]    33 |   [01;31m[Krclcpp::init()[m[K;
+[2.449s]       |   [01;31m[K~~~~~~~~~~~~^~[m[K
+[2.449s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.449s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.449s]                  from [01m[K/ros2/src/imu/src/imu_publisher.cpp:1[m[K:
+[2.450s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:75:1:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.450s]    75 | [01;36m[Kinit[m[K(
+[2.450s]       | [01;36m[K^~~~[m[K
+[2.451s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:32:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.451s]    32 | int main([01;35m[Kint argc[m[K, char *argv[]) {
+[2.451s]       |          [01;35m[K~~~~^~~~[m[K
+[2.451s] [01m[K/ros2/src/imu/src/imu_publisher.cpp:32:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.451s]    32 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
+[2.451s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[2.940s] gmake[2]: *** [CMakeFiles/imu_publisher.dir/build.make:76: CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o] Error 1
+[2.940s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/imu_publisher.dir/all] Error 2
+[2.941s] gmake: *** [Makefile:146: all] Error 2
+[2.942s] Invoked command in '/ros2/build/imu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2/install/vehicle_status_py:/ros2/install/talker_listener_py:/opt/ros/humble /usr/bin/cmake --build /ros2/build/imu -- -j12 -l12

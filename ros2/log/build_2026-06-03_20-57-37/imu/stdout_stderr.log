@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target imu_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/imu_publisher.dir/src/imu_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable imu_publisher[0m
+[100%] Built target imu_publisher
+-- Install configuration: ""
+-- Installing: /ros2/install/imu/lib/imu/imu_publisher
+-- Set runtime path of "/ros2/install/imu/lib/imu/imu_publisher" to ""
+-- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/package_run_dependencies/imu
+-- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/parent_prefix_path/imu
+-- Up-to-date: /ros2/install/imu/share/imu/environment/ament_prefix_path.sh
+-- Up-to-date: /ros2/install/imu/share/imu/environment/ament_prefix_path.dsv
+-- Up-to-date: /ros2/install/imu/share/imu/environment/path.sh
+-- Up-to-date: /ros2/install/imu/share/imu/environment/path.dsv
+-- Up-to-date: /ros2/install/imu/share/imu/local_setup.bash
+-- Up-to-date: /ros2/install/imu/share/imu/local_setup.sh
+-- Up-to-date: /ros2/install/imu/share/imu/local_setup.zsh
+-- Up-to-date: /ros2/install/imu/share/imu/local_setup.dsv
+-- Installing: /ros2/install/imu/share/imu/package.dsv
+-- Up-to-date: /ros2/install/imu/share/ament_index/resource_index/packages/imu
+-- Up-to-date: /ros2/install/imu/share/imu/cmake/imuConfig.cmake
+-- Up-to-date: /ros2/install/imu/share/imu/cmake/imuConfig-version.cmake
+-- Up-to-date: /ros2/install/imu/share/imu/package.xml
